@@ -3,5 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        Svet svet = new Svet();
+        System.out.println(svet.nacteniMapy());
     }
 }
