@@ -1,0 +1,10 @@
+1. jdi [lokace] - Pohyb mezi lokacemi.
+2. konec - Ukončení hry.
+3. pomoc - Zobrazení seznamu příkazů.
+4. napoveda - Dodatečná rada pro aktuální situaci.
+5. vyber [předmět] - Slouží pro výběr zbraně.
+6. vezmi [předmět] - Sebrat předmět.
+7. pouzij [předmět] - Použit předmět.
+8. zahod [předmět] - Hráč odstraní předmět z jeho inventáře.
+9. mluv [postava] - Komunikovat s postavami.
+10. prozkoumej [lokace/předmět] – Detailnější popis.
