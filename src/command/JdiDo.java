@@ -1,4 +1,8 @@
-public class Exit implements Command{
+package command;
+
+public class JdiDo implements Command {
+
+
     @Override
     public String execute() {
         return "";
@@ -6,6 +10,7 @@ public class Exit implements Command{
 
     @Override
     public boolean exit() {
-        return true;
+        return false;
     }
+
 }

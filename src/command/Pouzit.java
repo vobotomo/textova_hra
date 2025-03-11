@@ -1,4 +1,8 @@
-public class Mluv implements Command{
+package command;
+
+public class Pouzit implements Command {
+
+
     @Override
     public String execute() {
         return "";

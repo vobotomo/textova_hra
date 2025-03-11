@@ -1,4 +1,8 @@
-public class Prozkoumej implements Command{
+package command;
+
+public class Pomoc implements Command {
+
+    //nacte prikazy se souboru
     @Override
     public String execute() {
         return "";

@@ -1,6 +1,6 @@
-public class Pouzit implements Command{
+package command;
 
-
+public class Exit implements Command {
     @Override
     public String execute() {
         return "";
@@ -8,6 +8,6 @@ public class Pouzit implements Command{
 
     @Override
     public boolean exit() {
-        return false;
+        return true;
     }
 }

@@ -1,4 +1,6 @@
-public class Zahod implements Command{
+package command;
+
+public class Prozkoumej implements Command {
     @Override
     public String execute() {
         return "";

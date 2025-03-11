@@ -1,4 +1,6 @@
-public class Vzit implements Command{
+package command;
+
+public class Vzit implements Command {
     @Override
     public String execute() {
         return "";

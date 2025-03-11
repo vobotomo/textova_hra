@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
-      <change beforePath="$PROJECT_DIR$/src/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mistnost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Hrac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Inventar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Konzole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mluv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Mluv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nepritel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Nepritel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pomoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pomoc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Predmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Predmet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vzit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zahod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Zahod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zbran.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Zbran.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vobotomo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vobotomo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/vobotomo/textova_hra.git",
-    "accountId": "54fb3007-c243-4825-bc48-7aadbd3b49dd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vobotomo/textova_hra&quot;,
+    &quot;accountId&quot;: &quot;54fb3007-c243-4825-bc48-7aadbd3b49dd&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -48,6 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/vobor/Downloads/textova_hra-master/textova_hra-master",
@@ -57,10 +74,28 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/vobor/IdeaProjects/untitled2/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.updates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="textova_hra" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="textova_hra" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +119,8 @@
       <workItem from="1741114530679" duration="93000" />
       <workItem from="1741114630747" duration="185000" />
       <workItem from="1741114971622" duration="175000" />
+      <workItem from="1741539464825" duration="269000" />
+      <workItem from="1741718527180" duration="867000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />

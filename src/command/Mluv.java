@@ -1,6 +1,6 @@
-public class Pomoc implements Command{
+package command;
 
-    //nacte prikazy se souboru
+public class Mluv implements Command {
     @Override
     public String execute() {
         return "";

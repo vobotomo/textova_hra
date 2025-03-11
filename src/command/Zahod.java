@@ -1,6 +1,6 @@
-public class JdiDo implements Command{
+package command;
 
-
+public class Zahod implements Command {
     @Override
     public String execute() {
         return "";
@@ -10,5 +10,4 @@ public class JdiDo implements Command{
     public boolean exit() {
         return false;
     }
-
 }
