@@ -1,6 +1,6 @@
 package predmety;
 
-public class Zbran {
+public class Zbran extends Predmet {
 
 
 

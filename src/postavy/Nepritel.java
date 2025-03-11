@@ -1,8 +1,6 @@
 package postavy;
 
-public class Nepritel {
+public class Nepritel extends Postava{
 
-    private int ID;
-    private String jmeno;
-    private String dialog;
+
 }
