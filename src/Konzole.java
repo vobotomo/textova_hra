@@ -30,13 +30,18 @@ public class Konzole {
         if (prikazy.containsKey(prikaz)) {
             System.out.println(prikazy.get(prikaz).execute());
             exit = prikazy.get(prikaz).exit();
-        }else{
+        } else {
             System.out.println("Neplatny prikaz!");
         }
     }
 
 
-
+    public void start() {
+        inicializace();
+        do{
+            provedPrikaz();
+        }while(exit != true);
+    }
 
 
 }
