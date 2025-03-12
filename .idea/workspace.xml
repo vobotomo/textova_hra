@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="roztrideni do packagu">
-      <change afterPath="$PROJECT_DIR$/src/command/Napoveda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command/Vyber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/postavy/NPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/postavy/Postava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/predmety/Klic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/predmety/Kosti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/predmety/Prut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/predmety/Ryby.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Konzole : metoda start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy/Nepritel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Nepritel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/predmety/Predmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Predmet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/predmety/Zbran.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Zbran.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Konzole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Pomoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pomoc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +31,12 @@
     &quot;assignee&quot;: &quot;vobotomo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/vobotomo/textova_hra&quot;,
-    &quot;accountId&quot;: &quot;54fb3007-c243-4825-bc48-7aadbd3b49dd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vobotomo/textova_hra",
+    "accountId": "540c9ebf-469f-435a-910e-e7a9cc04a126"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -59,11 +50,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vobor/Downloads/textova_hra-master/textova_hra-master",
+    "last_opened_file_path": "F:/IT/project19_02_2025",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,8 +87,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
       </set>
     </attachedChunks>
   </component>
@@ -117,6 +109,7 @@
       <workItem from="1741114971622" duration="175000" />
       <workItem from="1741539464825" duration="269000" />
       <workItem from="1741718527180" duration="1810000" />
+      <workItem from="1741772106991" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -134,7 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741719723259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Trida Konzole : metody inicializace, provedPrikaz">
+      <option name="closed" value="true" />
+      <created>1741773150610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741773150610</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Trida Konzole : metoda start">
+      <option name="closed" value="true" />
+      <created>1741773466716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741773466716</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +152,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt" />
     <MESSAGE value="roztrideni do packagu" />
-    <option name="LAST_COMMIT_MESSAGE" value="roztrideni do packagu" />
+    <MESSAGE value="Trida Konzole : metody inicializace, provedPrikaz" />
+    <MESSAGE value="Trida Konzole : metoda start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trida Konzole : metoda start" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
