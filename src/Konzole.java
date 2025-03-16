@@ -40,7 +40,7 @@ public class Konzole {
         inicializace();
         do{
             Svet svet = new Svet();
-            System.out.println(svet.nacteniMapy());
+            svet.nacteniMapy();
             provedPrikaz();
         }while(exit != true);
     }

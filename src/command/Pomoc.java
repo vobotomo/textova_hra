@@ -12,12 +12,12 @@ public class Pomoc implements Command {
     @Override
     public String execute() {
         prikazy = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("D:\\voborny\\textova_hra\\src\\prikazy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/prikazy.txt"))) {
             String line = "";
             while ((line = br.readLine()) != null) {
-                prikazy.add(line + "\n");
+                prikazy.add(line);
             }
-            return prikazy.toString();
+            return String.join("\n", prikazy);
         } catch (Exception e) {
             return "";
         }
@@ -28,9 +28,4 @@ public class Pomoc implements Command {
         return false;
     }
 
-
-    @Override
-    public String toString() {
-        return prikazy + "";
-    }
 }
