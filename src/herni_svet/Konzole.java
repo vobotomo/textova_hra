@@ -1,4 +1,7 @@
+package herni_svet;
+
 import command.*;
+import postavy.Hrac;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -21,6 +24,7 @@ public class Konzole {
         prikazy.put("vyber", new Vyber());
         prikazy.put("vzit", new Vzit());
         prikazy.put("zahod", new Zahod());
+        prikazy.put("inventar", new UkazInventar());
         //prikazy.put("jdiDo", new JdiDo());
     }
 
@@ -41,6 +45,7 @@ public class Konzole {
         do{
             Svet svet = new Svet();
             svet.nacteniMapy();
+            Hrac hrac = new Hrac(svet.getPoziceHrace());
             provedPrikaz();
         }while(exit != true);
     }

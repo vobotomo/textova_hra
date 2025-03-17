@@ -1,3 +1,4 @@
+import herni_svet.Konzole;
 
 public class Main {
     public static void main(String[] args) {

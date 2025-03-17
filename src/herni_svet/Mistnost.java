@@ -1,3 +1,5 @@
+package herni_svet;
+
 import java.util.Arrays;
 
 public class Mistnost {
@@ -37,7 +39,7 @@ public class Mistnost {
 
     @Override
     public String toString() {
-        return "Mistnost{" +
+        return "herni_svet.Mistnost{" +
                 "ID=" + ID +
                 ", jmeno='" + jmeno + '\'' +
                 ", propojeneMistnosti=" + Arrays.toString(propojeneMistnosti) +

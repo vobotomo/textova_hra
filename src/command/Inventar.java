@@ -1,26 +1,14 @@
 package command;
 
 import predmety.Predmet;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Inventar implements Command{
+public class Inventar{
 
     private ArrayList<Predmet>inventar = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
-    @Override
-    public String execute() {
-        if(inventar.isEmpty()){
-            System.out.println("Inventar je prazdny.");
-        }
-    }
-
-    @Override
-    public boolean exit() {
-        return false;
-    }
 
     public boolean pridaniPredmetu(Predmet p){
         if(p != null){
