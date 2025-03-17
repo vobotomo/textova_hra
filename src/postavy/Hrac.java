@@ -8,6 +8,7 @@ public class Hrac {
     private int zivoty;
     private Inventar inventar;
     private int aktualniMistnost;
+    private int vlciKosti;
 
 
     public Hrac(int mistnost) {
@@ -15,6 +16,7 @@ public class Hrac {
         this.sila = 10;
         this.inventar = new Inventar();
         this.aktualniMistnost = mistnost;
+        this.vlciKosti = 0;
     }
 
     public int getSila() {
@@ -27,6 +29,14 @@ public class Hrac {
 
     public int getZivoty() {
         return zivoty;
+    }
+
+    public int getVlciKosti() {
+        return vlciKosti;
+    }
+
+    public void setVlciKosti(int vlciKosti) {
+        this.vlciKosti = vlciKosti;
     }
 
     public void setZivoty(int zivoty) {
