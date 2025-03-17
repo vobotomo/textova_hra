@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
+public class Inventar {
+
+
+
     private ArrayList<Predmet>inventar = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
