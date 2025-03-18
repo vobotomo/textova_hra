@@ -16,8 +16,9 @@ import java.util.HashMap;
 public class Svet {
 
 
-    public HashMap<Integer, Mistnost> svet = new HashMap<>();
+    private HashMap<Integer, Mistnost> svet = new HashMap<>();
     private int poziceHrace = 0;
+
 
     public boolean nacteniMapy() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/mapa.txt"))) {
@@ -39,7 +40,7 @@ public class Svet {
 
     }
 
-    ArrayList<Predmet> predmety;
+    private ArrayList<Predmet> predmety;
 
     public boolean nacteniPredmetu() {
         predmety = new ArrayList<>();
@@ -93,7 +94,7 @@ public class Svet {
     }
 
 
-    ArrayList<Postava> postavy;
+    private ArrayList<Postava> postavy;
 
 
     public boolean nacteniPostav() {
@@ -139,7 +140,17 @@ public class Svet {
         return svet;
     }
 
+    public ArrayList<Predmet> getPredmety() {
+        return predmety;
+    }
+
+    public ArrayList<Postava> getPostavy() {
+        return postavy;
+    }
+
     public int getPoziceHrace() {
         return poziceHrace;
     }
+
+
 }

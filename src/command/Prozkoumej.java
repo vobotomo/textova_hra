@@ -12,8 +12,18 @@ public class Prozkoumej implements Command {
 
     @Override
     public String execute() {
-        if(svet.predme)
-        return "";
+        String a = "";
+        int pocet = 0;
+        for (int i = 0; i < svet.getPredmety().size(); i ++) {
+            if (svet.getPoziceHrace()==svet.getPredmety().get(i).getID()){
+                a += ("V tehle mistnosti se nachazi " + svet.getPredmety().get(i).getJmeno() + "\n");
+                pocet++;
+            }
+        }
+        if(pocet == 0){
+            return "V mistnosti se nic nenachazi.";
+        }
+        return a;
     }
 
     @Override

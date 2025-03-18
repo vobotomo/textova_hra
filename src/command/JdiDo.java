@@ -20,13 +20,11 @@ public class JdiDo implements Command {
         int index = sc.nextInt();
         String jmenoMistnosti = "";
         if (svet.presunout(index)) {
-            jmenoMistnosti += svet.svet.get(index).getJmeno();
-            System.out.println("Presunuli jste se do mistnosti " + jmenoMistnosti);
+            jmenoMistnosti += svet.getSvet().get(index).getJmeno();
+            return "Presunuli jste se do mistnosti " + jmenoMistnosti;
         }else {
-            System.out.println("Presun neni mozny.");
+            return "Presun neni mozny.";
         }
-
-        return "";
     }
 
     @Override
