@@ -2,7 +2,7 @@ package command;
 
 import predmety.Predmet;
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 
 public class Inventar {
@@ -10,7 +10,6 @@ public class Inventar {
 
 
     private ArrayList<Predmet>inventar = new ArrayList<>();
-    private Scanner scanner = new Scanner(System.in);
 
 
     public boolean pridaniPredmetu(Predmet p){
@@ -29,5 +28,12 @@ public class Inventar {
             }
         }
         return false;
+    }
+
+
+
+
+    public ArrayList<Predmet> getInventar() {
+        return inventar;
     }
 }

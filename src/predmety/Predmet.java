@@ -14,6 +14,7 @@ public class Predmet {
         this.misto = misto;
     }
 
+
     public String getPopis() {
         return popis;
     }
