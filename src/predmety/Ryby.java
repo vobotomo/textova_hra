@@ -1,5 +1,7 @@
 package predmety;
 
+import postavy.Hrac;
+
 public class Ryby extends Predmet {
 
     private int zivoty;
@@ -13,7 +15,7 @@ public class Ryby extends Predmet {
         return zivoty;
     }
 
-    public void setZivoty(int zivoty) {
-        this.zivoty = zivoty;
+    public void setZivotyHrace(Hrac hrac){
+        hrac.setZivoty(hrac.getZivoty()+getZivoty());
     }
 }
