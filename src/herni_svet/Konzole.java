@@ -16,7 +16,7 @@ public class Konzole {
     public void inicializace(Svet svet) {
         prikazy = new HashMap<>();
         prikazy.put("exit", new Exit());
-        prikazy.put("napoveda", new Napoveda());
+        prikazy.put("napoveda", new Napoveda(svet));
         prikazy.put("pomoc", new Pomoc());
         prikazy.put("pouzit", new Pouzit());
         prikazy.put("prozkoumej", new Prozkoumej(svet));
