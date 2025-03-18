@@ -12,6 +12,9 @@ public class Svet {
     public HashMap<Integer, Mistnost> svet = new HashMap<>();
     private int poziceHrace = 0;
 
+
+
+
     public boolean nacteniMapy() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/mapa.txt"))) {
             String line;
@@ -33,20 +36,19 @@ public class Svet {
     }
 
 
-    public boolean presunout() {
-        Mistnost mistnost = new Mistnost();
-        mistnost.setID(getPoziceHrace());
-        if(svet.containsKey(poziceHrace)) {
-            for(int soused : mistnost.getPropojeneMistnosti()){
-                if(soused == mistnost.getID()){
-                    poziceHrace = mistnost.getID();
+    public boolean presunout(int cilovaMistnost) {
+        if (svet.containsKey(cilovaMistnost)) {
+            Mistnost aktualniMistnost = svet.get(poziceHrace);
+
+            for (int soused : aktualniMistnost.getPropojeneMistnosti()) {
+                if (soused == cilovaMistnost) {
+                    poziceHrace = cilovaMistnost;
                     return true;
                 }
             }
         }
         return false;
     }
-
 
     public HashMap<Integer, Mistnost> getSvet() {
         return svet;
