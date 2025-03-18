@@ -17,7 +17,7 @@ public class Zbran extends Predmet {
     }
 
 
-    public void seSilaHrace(Hrac hrac){
+    public void setSilaHrace(Hrac hrac){
         hrac.setSila(hrac.getSila()+getSila());
     }
 }
