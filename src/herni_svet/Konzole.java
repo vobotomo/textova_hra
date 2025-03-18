@@ -22,7 +22,7 @@ public class Konzole {
         prikazy.put("prozkoumej", new Prozkoumej(svet));
         prikazy.put("vyber", new Vyber());
         prikazy.put("vzit", new Vzit(svet, hrac));
-        prikazy.put("zahod", new Zahod());
+        prikazy.put("zahod", new Zahod(hrac));
         prikazy.put("inventar", new UkazInventar());
         prikazy.put("jdiDo", new JdiDo(svet));
     }
