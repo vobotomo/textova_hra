@@ -1,6 +1,5 @@
-package command;
+package predmety;
 
-import predmety.Predmet;
 import java.util.ArrayList;
 
 
@@ -9,7 +8,7 @@ public class Inventar {
 
 
 
-    private ArrayList<Predmet>inventar = new ArrayList<>();
+    private ArrayList<Predmet>inventar = new ArrayList<>(5);
 
 
     public boolean pridaniPredmetu(Predmet p){

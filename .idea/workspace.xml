@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Prozkoumej">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Napoveda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Inventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Inventar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Vzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vzit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Hrac.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +112,7 @@
       <workItem from="1741718527180" duration="1810000" />
       <workItem from="1741772106991" duration="2848000" />
       <workItem from="1742112135185" duration="1760000" />
-      <workItem from="1742319520540" duration="5724000" />
+      <workItem from="1742319520540" duration="7023000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -199,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742325163047</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Trida Napoveda">
+      <option name="closed" value="true" />
+      <created>1742325979647</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742325979647</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +228,8 @@
     <MESSAGE value="Trida JdiDo" />
     <MESSAGE value="Presunuti nacitani postav a predmetu do tridy Svet" />
     <MESSAGE value="Trida Prozkoumej" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trida Prozkoumej" />
+    <MESSAGE value="Trida Napoveda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trida Napoveda" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -246,6 +258,11 @@
           <url>file://$PROJECT_DIR$/src/herni_svet/Konzole.java</url>
           <line>20</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/herni_svet/Konzole.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

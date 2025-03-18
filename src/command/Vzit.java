@@ -1,22 +1,28 @@
 package command;
-import predmety.Predmet;
+
+
+import herni_svet.Svet;
+import postavy.Hrac;
 
 public class Vzit implements Command {
-    private Inventar inventar;
-    private Predmet predmet;
+    private Hrac hrac;
+    private Svet svet;
 
-    public Vzit(Inventar inventar, Predmet predmet) {
-        this.inventar = inventar;
-        this.predmet = predmet;
+    public Vzit(Svet svet, Hrac hrac) {
+        this.hrac = hrac;
+        this.svet = svet;
     }
 
     @Override
     public String execute() {
-        if (inventar.pridaniPredmetu(predmet)) {
-            return "Predmet " + predmet.getJmeno() + " byl pridan do inventare.";
-        } else {
-            return "Predmet nelze vzit.";
+        for (int i = 0; i < svet.getPredmety().size(); i ++) {
+            if (svet.getPoziceHrace() == svet.getPredmety().get(i).getID()) {
+                hrac.getInventar().pridaniPredmetu(svet.getPredmety().get(i));
+                return "Predmet " + svet.getPredmety().get(i).getJmeno() + " byl pridan do inventare.";
+            }
         }
+
+        return "V mistnosti se zadny predmet nenachazi.";
     }
 
     @Override

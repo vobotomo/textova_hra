@@ -1,5 +1,5 @@
 package postavy;
-import command.Inventar;
+import predmety.Inventar;
 
 
 public class Hrac {
@@ -17,7 +17,10 @@ public class Hrac {
         this.inventar = new Inventar();
         this.aktualniMistnost = mistnost;
         this.vlciKosti = 0;
+        inventar = new Inventar();
     }
+
+
 
     public int getSila() {
         return sila;
@@ -45,10 +48,6 @@ public class Hrac {
 
     public Inventar getInventar() {
         return inventar;
-    }
-
-    public void setInventar(Inventar inventar) {
-        this.inventar = inventar;
     }
 
     public int getAktualniMistnost() {
