@@ -23,7 +23,7 @@ public class Konzole {
         prikazy.put("vyber", new Vyber(hrac));
         prikazy.put("vzit", new Vzit(svet, hrac));
         prikazy.put("zahod", new Zahod(hrac));
-        prikazy.put("inventar", new UkazInventar());
+        prikazy.put("inventar", new UkazInventar(hrac));
         prikazy.put("jdiDo", new JdiDo(svet));
     }
 
