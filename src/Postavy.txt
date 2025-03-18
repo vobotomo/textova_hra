@@ -1,0 +1,5 @@
+postava;1;Mudrc; ;3
+nepritel;2;Obr; ;4;10;20
+postava;3;Vila; ;2
+nepritel;4;Vlk; ;1;5;10
+nepritel;5;Mrtvy rytir; ;5;15;30

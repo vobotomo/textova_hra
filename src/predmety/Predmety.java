@@ -9,6 +9,7 @@ public class Predmety {
     ArrayList<Predmet> predmety;
 
     public boolean nacteniPredmetu() {
+        predmety = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("src/prikazy.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {

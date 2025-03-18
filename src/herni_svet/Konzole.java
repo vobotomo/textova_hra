@@ -2,6 +2,8 @@ package herni_svet;
 
 import command.*;
 import postavy.Hrac;
+import postavy.Postavy;
+import predmety.Predmety;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -45,7 +47,12 @@ public class Konzole {
         do{
             Svet svet = new Svet();
             svet.nacteniMapy();
+            Postavy postavy = new Postavy();
+            postavy.nacteniPostav();
+            Predmety predmety = new Predmety();
+            predmety.nacteniPredmetu();
             Hrac hrac = new Hrac(svet.getPoziceHrace());
+
             provedPrikaz();
         }while(exit != true);
     }

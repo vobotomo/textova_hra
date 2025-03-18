@@ -43,7 +43,5 @@ public class Predmet {
         return jmeno;
     }
 
-    public void setJmeno(String jmeno) {
-        this.jmeno = jmeno;
-    }
+
 }

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Pomoc: vypis prikazu">
-      <change afterPath="$PROJECT_DIR$/src/predmety.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/predmety/Predmety.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Inventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Inventar.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Zbran, Ryby - settery">
+      <change afterPath="$PROJECT_DIR$/src/postavy/Postavy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/predmety/Klic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Klic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/predmety/Predmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Predmet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/predmety/Predmety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Predmety.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <workItem from="1741718527180" duration="1810000" />
       <workItem from="1741772106991" duration="2848000" />
       <workItem from="1742112135185" duration="1760000" />
-      <workItem from="1742319520540" duration="1715000" />
+      <workItem from="1742319520540" duration="2194000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -154,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742113062022</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trida Predmety + predmety.txt">
+      <option name="closed" value="true" />
+      <created>1742321597162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742321597162</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Trida Zbran, Ryby - settery">
+      <option name="closed" value="true" />
+      <created>1742321805110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742321805110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +181,9 @@
     <MESSAGE value="Trida Konzole : metody inicializace, provedPrikaz" />
     <MESSAGE value="Trida Konzole : metoda start" />
     <MESSAGE value="Trida Pomoc: vypis prikazu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trida Pomoc: vypis prikazu" />
+    <MESSAGE value="Trida Predmety + predmety.txt" />
+    <MESSAGE value="Trida Zbran, Ryby - settery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trida Zbran, Ryby - settery" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
