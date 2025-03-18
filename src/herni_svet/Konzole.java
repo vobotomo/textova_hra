@@ -2,8 +2,6 @@ package herni_svet;
 
 import command.*;
 import postavy.Hrac;
-import postavy.Postavy;
-import predmety.Predmety;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -15,10 +13,9 @@ public class Konzole {
     private HashMap<String, Command> prikazy;
 
 
-    public void inicializace() {
+    public void inicializace(Svet svet) {
         prikazy = new HashMap<>();
         prikazy.put("exit", new Exit());
-        prikazy.put("mluv", new Mluv());
         prikazy.put("napoveda", new Napoveda());
         prikazy.put("pomoc", new Pomoc());
         prikazy.put("pouzit", new Pouzit());
@@ -27,7 +24,7 @@ public class Konzole {
         prikazy.put("vzit", new Vzit());
         prikazy.put("zahod", new Zahod());
         prikazy.put("inventar", new UkazInventar());
-        //prikazy.put("jdiDo", new JdiDo());
+        prikazy.put("jdiDo", new JdiDo(svet));
     }
 
     public void provedPrikaz() {
@@ -43,14 +40,13 @@ public class Konzole {
 
 
     public void start() {
-        inicializace();
+        Svet svet = new Svet();
+        inicializace(svet);
         do{
-            Svet svet = new Svet();
             svet.nacteniMapy();
-            Postavy postavy = new Postavy();
-            postavy.nacteniPostav();
-            Predmety predmety = new Predmety();
-            predmety.nacteniPredmetu();
+            svet.nacteniPredmetu();
+            svet.nacteniPostav();
+
             Hrac hrac = new Hrac(svet.getPoziceHrace());
 
             provedPrikaz();
