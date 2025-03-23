@@ -21,6 +21,23 @@ public class Mistnost {
         }
     }
 
+    public void pridatPropojeni(int mistnostID) {
+        for (int id : propojeneMistnosti) {
+            if (id == mistnostID) {
+                return;
+            }
+        }
+
+        int[] novePropojeni = Arrays.copyOf(propojeneMistnosti, propojeneMistnosti.length + 1);
+        novePropojeni[novePropojeni.length - 1] = mistnostID;
+        propojeneMistnosti = novePropojeni;
+    }
+
+
+    public void propojeni(){
+
+    }
+
     public int getID() {
         return ID;
     }

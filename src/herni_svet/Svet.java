@@ -2,6 +2,7 @@ package herni_svet;
 
 import postavy.Nepritel;
 import postavy.Postava;
+import predmety.Klic;
 import predmety.Predmet;
 import predmety.Ryby;
 import predmety.Zbran;
@@ -76,6 +77,9 @@ public class Svet {
                                 break;
                             case "predmet":
                                 predmety.add(new Predmet(ID, jmeno, popis, misto));
+                                break;
+                            case "klic":
+                                predmety.add(new Klic(ID, jmeno, popis, misto));
                                 break;
                             default:
                                 return false;
