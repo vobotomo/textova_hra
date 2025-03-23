@@ -48,6 +48,14 @@ public class Pouzit implements Command {
                     }
                 }
             case "ryba":
+                for(int i = 0; i < hrac.getInventar().getInventar().size(); i++){
+                    if(hrac.getInventar().getInventar().get(i) instanceof Ryby){
+                        ((Ryby) hrac.getInventar().getInventar().get(i)).setZivotyHrace(hrac);
+                        return "Ryba byla snezena.";
+                    }
+                }
+            default:
+                return "Tento predmet neexistuje.";
         }
         return "";
     }
