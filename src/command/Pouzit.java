@@ -4,6 +4,7 @@ import herni_svet.Svet;
 import postavy.Hrac;
 import predmety.Klic;
 import predmety.Prut;
+import predmety.Ryby;
 
 import java.util.Scanner;
 
@@ -22,6 +23,10 @@ public class Pouzit implements Command {
     public String execute() {
         switch(sc.next()){
             case "klic":
+                if(!(svet.getPoziceHrace()==6)){
+                    return "Hrac je ve spatne mistnosti. Klic nelze pouzit.";
+                }
+
                     for(int i = 0; i < hrac.getInventar().getInventar().size(); i++){
                         if(hrac.getInventar().getInventar().get(i) instanceof Klic){
                             svet.odemknoutTajemnyChram();
@@ -31,10 +36,14 @@ public class Pouzit implements Command {
                     }
                 break;
             case "prut":
+                if(!(svet.getPoziceHrace()==5)){
+                    return "Prut nelze pouzit. Hrac je ve spatne mistnost.";
+                }
+
                 for(int i = 0; i < hrac.getInventar().getInventar().size(); i++){
                     if(hrac.getInventar().getInventar().get(i) instanceof Prut){
-                        //pouzit prut
                         hrac.getInventar().getInventar().remove(i);
+                        hrac.getInventar().getInventar().add(svet.getPredmety().get(5));
                         return "Prut byl pouzit.";
                     }
                 }
