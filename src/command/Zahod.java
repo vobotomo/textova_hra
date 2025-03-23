@@ -29,7 +29,6 @@ public class Zahod implements Command {
             }
 
             if (hrac.getInventar().getInventar().get(i) instanceof Klic) {
-                System.out.println("Zahodil jsi klic! Tajemny chram se zamyka...");
                 svet.zamknoutTajemnyChram();
             }
         }
