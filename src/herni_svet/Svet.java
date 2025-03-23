@@ -146,6 +146,10 @@ public class Svet {
         System.out.println("Tajemny chram je nyni pristupny!");
     }
 
+    public void zamknoutTajemnyChram() {
+        svet.get(6).setPropojeneMistnosti(new int[]{2});
+        System.out.println("Tajemny chram je opet nepristupny.");
+    }
 
     public HashMap<Integer, Mistnost> getSvet() {
         return svet;

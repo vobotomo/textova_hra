@@ -58,6 +58,9 @@ public class Mistnost {
                 '}';
     }
 
+    public void setPropojeneMistnosti(int[] propojeneMistnosti) {
+        this.propojeneMistnosti = propojeneMistnosti;
+    }
 
     public int[] getPropojeneMistnosti() {
         return propojeneMistnosti;
