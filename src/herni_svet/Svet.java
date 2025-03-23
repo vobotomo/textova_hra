@@ -140,6 +140,13 @@ public class Svet {
         return false;
     }
 
+    public void odemknoutTajemnyChram() {
+        Mistnost labyrint = svet.get(6);
+        labyrint.pridatPropojeni(7);
+        System.out.println("Tajemny chram je nyni pristupny!");
+    }
+
+
     public HashMap<Integer, Mistnost> getSvet() {
         return svet;
     }

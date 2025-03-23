@@ -33,11 +33,6 @@ public class Mistnost {
         propojeneMistnosti = novePropojeni;
     }
 
-
-    public void propojeni(){
-
-    }
-
     public int getID() {
         return ID;
     }
