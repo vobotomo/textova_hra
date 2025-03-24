@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Pouzit">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Mensi upravy v commandech">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pomoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pomoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Vzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Zahod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Zahod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Obchodnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,7 @@
       <workItem from="1742112135185" duration="1760000" />
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
-      <workItem from="1742838219786" duration="920000" />
+      <workItem from="1742838219786" duration="2094000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -284,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742758920597</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Mensi upravy v commandech">
+      <option name="closed" value="true" />
+      <created>1742839273202</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742839273202</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +316,8 @@
     <MESSAGE value="Trida Zahod upravena pro klic" />
     <MESSAGE value="Trida Vzit upravena pro klic" />
     <MESSAGE value="Trida Pouzit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trida Pouzit" />
+    <MESSAGE value="Mensi upravy v commandech" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mensi upravy v commandech" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
