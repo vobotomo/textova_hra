@@ -3,6 +3,7 @@ package command;
 import herni_svet.Svet;
 import postavy.Hrac;
 import predmety.Klic;
+import predmety.Predmet;
 
 import java.util.Scanner;
 
@@ -23,7 +24,11 @@ public class Zahod implements Command {
 
 
         for (int i = 0; i < hrac.getInventar().getInventar().size(); i ++) {
-            if(odpoved.equals(hrac.getInventar().getInventar().get(i).getJmeno())) {
+            Predmet predmet = hrac.getInventar().getInventar().get(i);
+            if(odpoved.equals(predmet.getJmeno())) {
+                predmet.setMisto(svet.getPoziceHrace());
+                svet.getPredmety().add(predmet);
+
                 hrac.getInventar().getInventar().remove(i);
                 return "Zahodil jsi " + hrac.getInventar().getInventar().get(i).getJmeno();
             }

@@ -8,7 +8,7 @@ public class Pomoc implements Command {
 
     ArrayList<String> prikazy;
 
-    //nacte prikazy ze souboru
+
     @Override
     public String execute() {
         prikazy = new ArrayList<>();

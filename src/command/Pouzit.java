@@ -21,6 +21,7 @@ public class Pouzit implements Command {
 
     @Override
     public String execute() {
+        System.out.println("Zadej jmeno predmetu, ktery chces pouzit." + "\n" + ">");
         switch(sc.next()){
             case "klic":
                 if(!(svet.getPoziceHrace()==6)){
