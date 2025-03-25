@@ -13,7 +13,9 @@ public class Konzole {
     private HashMap<String, Command> prikazy;
 
 
-    public void inicializace(Svet svet, Hrac hrac) {
+    public void inicializace(Svet svet) {
+        Hrac hrac = new Hrac(svet.getPoziceHrace());
+        Bludiste bludiste = new Bludiste(hrac, svet);
         prikazy = new HashMap<>();
         prikazy.put("exit", new Exit());
         prikazy.put("napoveda", new Napoveda(svet));
@@ -24,7 +26,8 @@ public class Konzole {
         prikazy.put("vzit", new Vzit(svet, hrac));
         prikazy.put("zahod", new Zahod(hrac, svet));
         prikazy.put("inventar", new UkazInventar(hrac));
-        prikazy.put("jdiDo", new JdiDo(svet));
+        prikazy.put("jdiDo", new JdiDo(svet, bludiste));
+        prikazy.put("interakce", new Interakce(hrac, svet));
     }
 
     public void provedPrikaz() {
@@ -41,8 +44,7 @@ public class Konzole {
 
     public void start() {
         Svet svet = new Svet();
-        Hrac hrac = new Hrac(svet.getPoziceHrace());
-        inicializace(svet, hrac);
+        inicializace(svet);
         do{
             svet.nacteniMapy();
             svet.nacteniPredmetu();

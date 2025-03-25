@@ -2,7 +2,6 @@ package command;
 
 import herni_svet.Svet;
 import postavy.Hrac;
-import predmety.Klic;
 import predmety.Prut;
 import predmety.Ryby;
 
@@ -23,19 +22,6 @@ public class Pouzit implements Command {
     public String execute() {
         System.out.println("Zadej jmeno predmetu, ktery chces pouzit." + "\n" + ">");
         switch(sc.next()){
-            case "klic":
-                if(!(svet.getPoziceHrace()==6)){
-                    return "Hrac je ve spatne mistnosti. Klic nelze pouzit.";
-                }
-
-                    for(int i = 0; i < hrac.getInventar().getInventar().size(); i++){
-                        if(hrac.getInventar().getInventar().get(i) instanceof Klic){
-                            svet.odemknoutTajemnyChram();
-                            hrac.getInventar().getInventar().remove(i);
-                            return "Klic byl pouzit.";
-                        }
-                    }
-                break;
             case "prut":
                 if(!(svet.getPoziceHrace()==5)){
                     return "Prut nelze pouzit. Hrac je ve spatne mistnost.";
@@ -58,7 +44,6 @@ public class Pouzit implements Command {
             default:
                 return "Tento predmet neexistuje.";
         }
-        return "";
     }
 
     @Override

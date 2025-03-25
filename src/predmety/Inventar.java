@@ -12,6 +12,11 @@ public class Inventar {
 
 
     public boolean pridaniPredmetu(Predmet p){
+        for(Predmet predmet : inventar){
+            if(inventar.contains(predmet)){
+                return false;
+            }
+        }
         if(p != null){
             inventar.add(p);
             return true;

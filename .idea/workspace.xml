@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Prikaz Interakce">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="zahajitSouboj() upraveno">
+      <change afterPath="$PROJECT_DIR$/src/bludiste.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command/Mluv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/napovedy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/napovedy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/predmety/Inventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Inventar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prikazy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/prikazy.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,7 @@
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
       <workItem from="1742838219786" duration="4609000" />
-      <workItem from="1742922369937" duration="3881000" />
+      <workItem from="1742922369937" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -316,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742924467293</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="zahajitSouboj() upraveno">
+      <option name="closed" value="true" />
+      <created>1742926670766</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1742926670766</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +361,8 @@
     <MESSAGE value="Metoda obchod" />
     <MESSAGE value="Metoda souboj + metoda" />
     <MESSAGE value="Prikaz Interakce" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prikaz Interakce" />
+    <MESSAGE value="zahajitSouboj() upraveno" />
+    <option name="LAST_COMMIT_MESSAGE" value="zahajitSouboj() upraveno" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
