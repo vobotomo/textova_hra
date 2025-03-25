@@ -3,24 +3,23 @@ package postavy;
 import herni_svet.Svet;
 import predmety.Predmet;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Obchodnik extends Postava {
 
-    private HashMap<String, Integer> predmety;
     Scanner sc = new Scanner(System.in);
 
     public Obchodnik(int ID, String jmeno, String dialog, int misto) {
         super(ID, jmeno, dialog, misto);
-        predmety = new HashMap<>(predmety);
     }
 
 
-    public void obchod(Hrac hrac, Svet svet) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Vitej v obchode! Nabizime nasledujici predmety:");
+    public String obchod(Hrac hrac, Svet svet) {
+        for(Postava postava : svet.getPostavy()){
+            if(svet.getPoziceHrace()== postava.getMisto()){
+                postava.getDialog();
+            }
+        }
         for (Predmet predmet : svet.getPredmety()) {
             if (predmet.getMisto() == svet.getPoziceHrace()) {
                 System.out.println("- " + predmet.getJmeno() + " (" + predmet.getPopis() + ") za 5 vlcich kosti");
@@ -31,8 +30,7 @@ public class Obchodnik extends Postava {
         String volba = sc.nextLine().toLowerCase();
 
         if (volba.equals("konec")) {
-            System.out.println("Obchod ukoncen.");
-            return;
+            return "Obchod ukoncen.";
         }
 
         for (Predmet predmet : svet.getPredmety()) {
@@ -42,16 +40,15 @@ public class Obchodnik extends Postava {
                 if (hrac.getVlciKosti() >= cena) {
                     hrac.setVlciKosti(hrac.getVlciKosti() - cena);
                     hrac.getInventar().pridaniPredmetu(predmet);
-                    System.out.println("Zakoupil jsi: " + predmet.getJmeno());
-                    return;
+                    return "Zakoupil jsi: " + predmet.getJmeno();
+
                 } else {
-                    System.out.println("Nemas dost vlcich kosti!");
-                    return;
+                    return "Nemas dost vlcich kosti!";
                 }
             }
         }
 
-        System.out.println("Tento predmet neni v nabidce.");
+        return "Tento predmet neni v nabidce.";
     }
 
 

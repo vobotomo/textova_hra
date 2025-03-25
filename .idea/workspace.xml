@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Metoda obchod">
-      <change afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Metoda souboj + metoda">
+      <change afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Obchodnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/predmety.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,8 @@
       <workItem from="1742112135185" duration="1760000" />
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
-      <workItem from="1742838219786" duration="4517000" />
+      <workItem from="1742838219786" duration="4609000" />
+      <workItem from="1742922369937" duration="1805000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -297,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742840729449</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Metoda souboj + metoda">
+      <option name="closed" value="true" />
+      <created>1742842861386</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1742842861386</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +338,8 @@
     <MESSAGE value="Trida Pouzit" />
     <MESSAGE value="Mensi upravy v commandech" />
     <MESSAGE value="Metoda obchod" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metoda obchod" />
+    <MESSAGE value="Metoda souboj + metoda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metoda souboj + metoda" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

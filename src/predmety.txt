@@ -1,5 +1,5 @@
 zbran;1;Nuz;Startovni zbran hrace;0;5
-predmet;2;Lektvar odvahy;Umoznuje hraci postavit se Veleslavovi;7
+predmet;2;Lektvar odvahy;Umoznuje hraci postavit se Veleslavovi;4
 zbran;3;Legendarni mec;Hrac dava vetsi poskozeni;3;20
 zbran;4;Myticka palice;Mene ucinna nez mec;1;12
 ryby;5;Ryby;Zvysi celkove zivoty hrace. Nelze si ponechat.;5;15
