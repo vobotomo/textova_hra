@@ -15,6 +15,7 @@ public class Konzole {
 
     public void inicializace(Svet svet) {
         Hrac hrac = new Hrac(svet.getPoziceHrace());
+        hrac.setAktualniMistnost(0);
         Bludiste bludiste = new Bludiste(hrac, svet);
         prikazy = new HashMap<>();
         prikazy.put("exit", new Exit());
@@ -26,7 +27,7 @@ public class Konzole {
         prikazy.put("vzit", new Vzit(svet, hrac));
         prikazy.put("zahod", new Zahod(hrac, svet));
         prikazy.put("inventar", new UkazInventar(hrac));
-        prikazy.put("jdiDo", new JdiDo(svet, bludiste));
+        prikazy.put("jdido", new JdiDo(svet, bludiste));
         prikazy.put("interakce", new Interakce(hrac, svet));
         prikazy.put("mluv", new Mluv(svet));
     }
@@ -47,11 +48,6 @@ public class Konzole {
         Svet svet = new Svet();
         inicializace(svet);
         do{
-            svet.nacteniMapy();
-            svet.nacteniPredmetu();
-            svet.nacteniPostav();
-
-
             provedPrikaz();
         }while(exit != true);
     }

@@ -22,7 +22,6 @@ public class Souboj {
     }
 
     public String zahajitSouboj() {
-        boolean pouzilLektvar = false;
 
         System.out.println("Narazil jsi na nepritele: " + nepritel.getJmeno());
         System.out.println(nepritel.getDialog());
@@ -37,7 +36,6 @@ public class Souboj {
                     if (odpoved.equals("ano")) {
                         hrac.getInventar().odstraneniPredmetu(predmet);
                         hrac.setSila(hrac.getSila() + 10);
-                        pouzilLektvar = true;
                         System.out.println("Pouzil jsi Lektvar odvahy! Tvoje sila je docasne zvysena.");
                     }
                     break;
@@ -81,12 +79,14 @@ public class Souboj {
             }
         }
 
-        if (hrac.getZivoty() > 0) {
+        if (hrac.getZivoty() > 0 && nepritel.getZivoty() <= 0) {
             if (!(nepritel.getJmeno()==("Vlk"))) {
                 svet.getPostavy().remove(nepritel);
             }
-            if(pouzilLektvar==true){
-                hrac.setSila(hrac.getSila() - 10);
+            if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
+                System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
+                System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
+                System.exit(0);
             }
             return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
         } else {

@@ -20,7 +20,18 @@ public class JdiDo implements Command {
     @Override
     public String execute() {
         System.out.println("Zadej index mistnosti." + "\n" + ">");
-        int index = sc.nextInt();
+        int index = -1;
+
+        while (true) {
+            if (sc.hasNextInt()) {
+                index = sc.nextInt();
+                break;
+            } else {
+                System.out.println("To není platný index. Zadejte celé číslo.");
+                sc.next();
+            }
+        }
+
         String jmenoMistnosti = "";
         if(index == 6){
             bludiste.spustit();

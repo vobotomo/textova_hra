@@ -1,6 +1,8 @@
 package command;
 
 import herni_svet.Svet;
+import postavy.Postava;
+import predmety.Predmet;
 
 public class Prozkoumej implements Command {
     private Svet svet;
@@ -12,22 +14,27 @@ public class Prozkoumej implements Command {
 
     @Override
     public String execute() {
-        String a = "";
+        StringBuilder a = new StringBuilder();
         int pocet = 0;
-        for (int i = 0; i < svet.getPredmety().size(); i ++) {
-            if (svet.getPoziceHrace()==svet.getPredmety().get(i).getID()){
-                a += ("V tehle mistnosti se nachazi " + svet.getPredmety().get(i).getJmeno() + "\n");
+
+        for (Predmet predmet : svet.getPredmety()) {
+            if (svet.getPoziceHrace() == predmet.getMisto()) {
+                a.append("V této místnosti se nachází předmět: ").append(predmet.getJmeno()).append("\n");
                 pocet++;
             }
-            if (svet.getPoziceHrace()==svet.getPostavy().get(i).getID()){
-                a += ("V tehle mistnosti se nachazi " + svet.getPredmety().get(i).getJmeno() + "\n");
+        }
+
+
+        for (Postava postava : svet.getPostavy()) {
+            if (svet.getPoziceHrace() == postava.getMisto()) {
+                a.append("V této místnosti se nachází postava: ").append(postava.getJmeno()).append("\n");
                 pocet++;
             }
         }
         if(pocet == 0){
             return "V mistnosti se nenachazi zadne predmety ani postavy.";
         }
-        return a;
+        return a.toString();
     }
 
     @Override

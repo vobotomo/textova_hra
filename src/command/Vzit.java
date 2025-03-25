@@ -16,7 +16,7 @@ public class Vzit implements Command {
     @Override
     public String execute() {
         for (int i = 0; i < svet.getPredmety().size(); i ++) {
-            if (svet.getPoziceHrace() == svet.getPredmety().get(i).getID()) {
+            if (svet.getPoziceHrace() == svet.getPredmety().get(i).getMisto()) {
                 hrac.getInventar().pridaniPredmetu(svet.getPredmety().get(i));
                 return "Predmet " + svet.getPredmety().get(i).getJmeno() + " byl pridan do inventare.";
             }

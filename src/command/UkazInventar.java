@@ -23,7 +23,7 @@ public class UkazInventar implements Command{
             }
         }
 
-        return result;
+        return result + "\n" + "Vlci kosti: " + hrac.getInventar().getInventar();
     }
 
     @Override

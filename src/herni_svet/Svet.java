@@ -21,6 +21,12 @@ public class Svet {
     private int poziceHrace = 0;
 
 
+    public Svet() {
+        nacteniMapy();
+        nacteniPredmetu();
+        nacteniPostav();
+    }
+
     public boolean nacteniMapy() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/mapa.txt"))) {
             String line;
@@ -45,7 +51,7 @@ public class Svet {
 
     public boolean nacteniPredmetu() {
         predmety = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("src/prikazy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/predmety.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(";");
@@ -57,6 +63,7 @@ public class Svet {
                         String jmeno = data[2];
                         String popis = data[3];
                         int misto = Integer.parseInt(data[4]);
+
 
                         switch (typ.toLowerCase()) {
                             case "zbran":
@@ -112,6 +119,7 @@ public class Svet {
                 String dialog = data[3];
                 int misto = Integer.parseInt(data[4]);
 
+
                 if (data[0].equals("nepritel")) {
                     int sila = Integer.parseInt(data[5]);
                     int zivoty = Integer.parseInt(data[6]);
@@ -132,7 +140,7 @@ public class Svet {
 
             for (int soused : aktualniMistnost.getPropojeneMistnosti()) {
                 if (soused == cilovaMistnost) {
-                    poziceHrace = cilovaMistnost;
+                    setPoziceHrace(cilovaMistnost);
                     return true;
                 }
             }
@@ -167,5 +175,7 @@ public class Svet {
         return poziceHrace;
     }
 
-
+    public void setPoziceHrace(int poziceHrace) {
+        this.poziceHrace = poziceHrace;
+    }
 }

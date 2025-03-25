@@ -25,7 +25,7 @@ public class Interakce implements Command {
         Postava nalezenaPostava = null;
 
         for (Postava postava : svet.getPostavy()) {
-            if (postava.getMisto() == hrac.getAktualniMistnost()) {
+            if (postava.getMisto() == svet.getPoziceHrace()) {
                 nalezenaPostava = postava;
                 break;
             }

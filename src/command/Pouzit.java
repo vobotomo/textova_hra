@@ -20,6 +20,11 @@ public class Pouzit implements Command {
 
     @Override
     public String execute() {
+        if(hrac.getInventar().getInventar().isEmpty()){
+            return "Inventar je prazdny.";
+        }
+
+
         System.out.println("Zadej jmeno predmetu, ktery chces pouzit." + "\n" + ">");
         switch(sc.next()){
             case "prut":

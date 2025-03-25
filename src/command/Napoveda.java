@@ -15,6 +15,7 @@ public class Napoveda implements Command{
 
 
     public Napoveda(Svet svet) {
+        napovedy = new ArrayList<>();
         this.svet = svet;
     }
 

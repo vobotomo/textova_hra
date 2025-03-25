@@ -15,11 +15,16 @@ public class Vyber implements Command {
 
     @Override
     public String execute() {
+        if(hrac.getInventar().getInventar().isEmpty()){
+            return "Inventar je prazdny.";
+        }
+
+
         System.out.println("Jakou zbran chces vybrat?" + "\n" + ">");
         String odpoved = sc.next();
 
         for (int i = 0; i < hrac.getInventar().getInventar().size(); i++) {
-            if (odpoved.equals(hrac.getInventar().getInventar().get(i).getJmeno())) {
+            if (odpoved.equalsIgnoreCase(hrac.getInventar().getInventar().get(i).getJmeno())) {
                 Zbran vybranaZbran = (Zbran) hrac.getInventar().getInventar().get(i);
 
                 vybranaZbran.setSilaHrace(hrac);
