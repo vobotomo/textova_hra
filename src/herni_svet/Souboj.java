@@ -2,6 +2,7 @@ package herni_svet;
 
 import postavy.Hrac;
 import postavy.Nepritel;
+import postavy.Postava;
 import predmety.Predmet;
 
 import java.util.Random;
@@ -25,6 +26,7 @@ public class Souboj {
 
         System.out.println("Narazil jsi na nepritele: " + nepritel.getJmeno());
         System.out.println(nepritel.getDialog());
+
 
         if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
             for (Predmet predmet : hrac.getInventar().getInventar()) {
@@ -85,18 +87,20 @@ public class Souboj {
             if (nepritel.getZivoty() <= 0) {
                 if (!(nepritel.getJmeno().equals("Vlk"))) {
                     svet.getPostavy().remove(nepritel);
+                    break;
                 }
                 if (nepritel.getJmeno().equals("Vlk")) {
-                    hrac.setZivoty(hrac.getVlciKosti()+2);
+                    nepritel.setZivoty(10);
+                    hrac.setVlciKosti(hrac.getVlciKosti()+2);
+                    break;
                 }
                 if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
                     System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
                     System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
                     System.exit(0);
                 }
-                return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
             }
         }
-        return "Souboj zkoncil";
+        return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
     }
 }

@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="oprava chyb">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Souboj uprava">
       <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,7 @@
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
       <workItem from="1742838219786" duration="4609000" />
-      <workItem from="1742922369937" duration="13097000" />
+      <workItem from="1742922369937" duration="13738000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -346,14 +345,21 @@
       <option name="project" value="LOCAL" />
       <updated>1742936182914</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Souboj uprava">
+      <option name="closed" value="true" />
+      <created>1742936930610</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1742936930610</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Konzole : metoda start" />
     <MESSAGE value="Trida Pomoc: vypis prikazu" />
     <MESSAGE value="Trida Predmety + predmety.txt" />
     <MESSAGE value="Trida Zbran, Ryby - settery" />
@@ -378,7 +384,8 @@
     <MESSAGE value="Bludiste a jeho metody, soubor pro nej.&#10;Detaily" />
     <MESSAGE value="Trida Mluv" />
     <MESSAGE value="oprava chyb" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprava chyb" />
+    <MESSAGE value="Souboj uprava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Souboj uprava" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
