@@ -28,6 +28,7 @@ public class Konzole {
         prikazy.put("inventar", new UkazInventar(hrac));
         prikazy.put("jdiDo", new JdiDo(svet, bludiste));
         prikazy.put("interakce", new Interakce(hrac, svet));
+        prikazy.put("mluv", new Mluv(svet));
     }
 
     public void provedPrikaz() {
