@@ -43,7 +43,7 @@ public class Interakce implements Command {
             String odpoved = scanner.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
-                new Souboj(hrac, (Nepritel) nalezenaPostava).zahajitSouboj();;
+                new Souboj(hrac, (Nepritel) nalezenaPostava, svet).zahajitSouboj();;
             } else {
                 return "Rozhodl ses neutocit a ustoupit.";
             }
