@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Trida Mluv">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="oprava chyb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Napoveda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Napoveda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/UkazInventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/UkazInventar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Vyber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vyber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Vzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Zahod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Zahod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Svet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Svet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mapa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/mapa.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prikazy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/prikazy.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +112,7 @@
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
       <workItem from="1742838219786" duration="4609000" />
-      <workItem from="1742922369937" duration="12267000" />
+      <workItem from="1742922369937" duration="13097000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -352,14 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1742931793802</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="oprava chyb">
+      <option name="closed" value="true" />
+      <created>1742936182914</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1742936182914</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Konzole : metody inicializace, provedPrikaz" />
     <MESSAGE value="Trida Konzole : metoda start" />
     <MESSAGE value="Trida Pomoc: vypis prikazu" />
     <MESSAGE value="Trida Predmety + predmety.txt" />
@@ -384,7 +377,8 @@
     <MESSAGE value="zahajitSouboj() upraveno" />
     <MESSAGE value="Bludiste a jeho metody, soubor pro nej.&#10;Detaily" />
     <MESSAGE value="Trida Mluv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trida Mluv" />
+    <MESSAGE value="oprava chyb" />
+    <option name="LAST_COMMIT_MESSAGE" value="oprava chyb" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

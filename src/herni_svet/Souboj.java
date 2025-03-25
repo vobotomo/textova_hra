@@ -45,7 +45,7 @@ public class Souboj {
 
         while (hrac.getZivoty() > 0 && nepritel.getZivoty() > 0) {
             System.out.println("\nTvoje zivoty: " + hrac.getZivoty() + " | Zivoty nepritele: " + nepritel.getZivoty());
-            System.out.println("Vyber akci: 1. Utok | 2. Obrana | 3. Pouzit predmet");
+            System.out.println("Vyber akci: 1. Utok | 2. Obrana");
             int volba = sc.nextInt();
 
             if (volba == 1) {
@@ -54,9 +54,8 @@ public class Souboj {
                 System.out.println("Zautocil jsi a zpusobil " + hracUtok + " poskozeni.");
             } else if (volba == 2) {
                 System.out.println("Pripravil jsi se na obranu! Poškození nepritele se sníží.");
-            } else if (volba == 3) {
-                System.out.println("Pouziti predmetu zatim neni implementovano.");
             }
+
 
             if (nepritel.getZivoty() > 0) {
                 Random random = new Random();
@@ -77,20 +76,27 @@ public class Souboj {
                     System.out.println("Nepritel se pripravil na obranu.");
                 }
             }
-        }
 
-        if (hrac.getZivoty() > 0 && nepritel.getZivoty() <= 0) {
-            if (!(nepritel.getJmeno()==("Vlk"))) {
-                svet.getPostavy().remove(nepritel);
-            }
-            if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
-                System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
-                System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
+            if(hrac.getZivoty() <= 0) {
+                System.out.println("Prohral jsi... Nepritel te premohl.");
                 System.exit(0);
             }
-            return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
-        } else {
-            return "Prohral jsi... Nepritel te premohl.";
+
+            if (nepritel.getZivoty() <= 0) {
+                if (!(nepritel.getJmeno().equals("Vlk"))) {
+                    svet.getPostavy().remove(nepritel);
+                }
+                if (nepritel.getJmeno().equals("Vlk")) {
+                    hrac.setZivoty(hrac.getVlciKosti()+2);
+                }
+                if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
+                    System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
+                    System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
+                    System.exit(0);
+                }
+                return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
+            }
         }
+        return "Souboj zkoncil";
     }
 }
