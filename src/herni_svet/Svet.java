@@ -104,6 +104,36 @@ public class Svet {
         }
     }
 
+    private ArrayList<Predmet> predmetyObchod;
+
+    public boolean nacteniPredmetuObchod() {
+        predmetyObchod = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("src/predmetyObchod.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] data = line.split(";");
+
+                if (data.length >= 5) {
+                    try {
+                        int ID = Integer.parseInt(data[0]);
+                        String jmeno = data[1];
+                        String popis = data[2];
+                        int misto = Integer.parseInt(data[3]);
+
+                        predmetyObchod.add(new Predmet(ID, jmeno, popis, misto));
+                    } catch (NumberFormatException e) {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            }
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 
     private ArrayList<Postava> postavy;
 
@@ -161,6 +191,10 @@ public class Svet {
 
     public HashMap<Integer, Mistnost> getSvet() {
         return svet;
+    }
+
+    public ArrayList<Predmet> getPredmetyObchod() {
+        return predmetyObchod;
     }
 
     public ArrayList<Predmet> getPredmety() {
