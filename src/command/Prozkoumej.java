@@ -21,7 +21,7 @@ public class Prozkoumej implements Command {
 
         for (Predmet predmet : svet.getPredmety()) {
             if (svet.getPoziceHrace() == predmet.getMisto()) {
-                a.append("V této místnosti se nachází předmět: ").append(predmet.getJmeno()).append("\n");
+                a.append("V teto mistnosti se nachazi predmet: ").append(predmet.getJmeno()).append("\n");
                 pocet++;
             }
         }
@@ -29,7 +29,7 @@ public class Prozkoumej implements Command {
 
         for (Postava postava : svet.getPostavy()) {
             if (svet.getPoziceHrace() == postava.getMisto()) {
-                a.append("V této místnosti se nachází postava: ").append(postava.getJmeno()).append("\n");
+                a.append("V teto místnosti se nachazi postava: ").append(postava.getJmeno()).append("\n");
                 pocet++;
             }
         }

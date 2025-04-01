@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="SoubojTest">
-      <change afterPath="$PROJECT_DIR$/src/testy/PouzitTest.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="PouzitTest">
+      <change afterPath="$PROJECT_DIR$/src/testy/SvetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Svet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Svet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +62,11 @@
     "JUnit.JdiDoTest.testPresunDoPlatneMistnosti.executor": "Run",
     "JUnit.JdiDoTest.testSpusteniBludiste.executor": "Run",
     "JUnit.PouzitTest.executor": "Run",
+    "JUnit.PouzitTest.testPouzitPrutVeSpravneMistnosti.executor": "Run",
     "JUnit.SoubojTest.executor": "Run",
     "JUnit.SoubojTest.testSoubojObrana.executor": "Run",
     "JUnit.SoubojTest.testSoubojUtok.executor": "Run",
+    "JUnit.SvetTest.executor": "Run",
     "JUnit.ZahodTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -98,7 +100,7 @@
       <recent name="testy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PouzitTest.testPouzitPrutVeSpravneMistnosti">
+  <component name="RunManager" selected="JUnit.SvetTest">
     <configuration name="PouzitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <extension name="coverage">
@@ -145,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoubojTest.testSoubojObrana" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SvetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <extension name="coverage">
         <pattern>
@@ -154,14 +156,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
-      <option name="METHOD_NAME" value="testSoubojObrana" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="testy.SvetTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoubojTest.testSoubojUtok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SvetTest.testPresunout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <extension name="coverage">
         <pattern>
@@ -170,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
-      <option name="METHOD_NAME" value="testSoubojUtok" />
+      <option name="MAIN_CLASS_NAME" value="testy.SvetTest" />
+      <option name="METHOD_NAME" value="testPresunout" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SvetTest" />
+        <item itemvalue="JUnit.SvetTest.testPresunout" />
         <item itemvalue="JUnit.PouzitTest.testPouzitPrutVeSpravneMistnosti" />
         <item itemvalue="JUnit.PouzitTest" />
         <item itemvalue="JUnit.SoubojTest" />
-        <item itemvalue="JUnit.SoubojTest.testSoubojObrana" />
-        <item itemvalue="JUnit.SoubojTest.testSoubojUtok" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +233,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="10037000" />
+      <workItem from="1743523210583" duration="10774000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -522,14 +523,32 @@
       <option name="project" value="LOCAL" />
       <updated>1743532760930</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="PouzitTest">
+      <option name="closed" value="true" />
+      <created>1743533590435</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1743533590435</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Prozkoumej" />
     <MESSAGE value="Trida Napoveda" />
     <MESSAGE value="Trida Vzit" />
     <MESSAGE value="Trida Zahod" />
@@ -554,7 +573,8 @@
     <MESSAGE value="JdiDoTest" />
     <MESSAGE value="InterakceTest" />
     <MESSAGE value="SoubojTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="SoubojTest" />
+    <MESSAGE value="PouzitTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="PouzitTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
