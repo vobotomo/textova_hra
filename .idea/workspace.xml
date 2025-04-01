@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Nacitani predmetu pro obchodnika">
-      <change afterPath="$PROJECT_DIR$/src/testy/ZahodTest.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest">
+      <change afterPath="$PROJECT_DIR$/src/testy/JdiDoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Mluv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Mluv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Napoveda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Napoveda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pomoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pomoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/UkazInventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/UkazInventar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Vyber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vyber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Vzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Zahod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Zahod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Svet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Svet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy/Obchodnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +52,12 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.JdiDoTest.executor": "Run",
+    "JUnit.JdiDoTest.testBludisteBezKlice.executor": "Run",
+    "JUnit.JdiDoTest.testNeplatnyPresun.executor": "Run",
+    "JUnit.JdiDoTest.testNeplatnyVstup.executor": "Run",
+    "JUnit.JdiDoTest.testPresunDoPlatneMistnosti.executor": "Run",
+    "JUnit.JdiDoTest.testSpusteniBludiste.executor": "Run",
     "JUnit.ZahodTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -101,7 +91,87 @@
       <recent name="testy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JdiDoTest.testBludisteBezKlice">
+    <configuration name="JdiDoTest.testBludisteBezKlice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
+      <option name="METHOD_NAME" value="testBludisteBezKlice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdiDoTest.testNeplatnyPresun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
+      <option name="METHOD_NAME" value="testNeplatnyPresun" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdiDoTest.testNeplatnyVstup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
+      <option name="METHOD_NAME" value="testNeplatnyVstup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdiDoTest.testPresunDoPlatneMistnosti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
+      <option name="METHOD_NAME" value="testPresunDoPlatneMistnosti" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdiDoTest.testSpusteniBludiste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
+      <option name="METHOD_NAME" value="testSpusteniBludiste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="textova_hra" />
       <method v="2">
@@ -115,6 +185,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JdiDoTest.testBludisteBezKlice" />
+        <item itemvalue="JUnit.JdiDoTest.testSpusteniBludiste" />
+        <item itemvalue="JUnit.JdiDoTest.testNeplatnyVstup" />
+        <item itemvalue="JUnit.JdiDoTest.testNeplatnyPresun" />
+        <item itemvalue="JUnit.JdiDoTest.testPresunDoPlatneMistnosti" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -148,7 +227,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="668000" />
+      <workItem from="1743523210583" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -406,14 +485,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743322323224</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest">
+      <option name="closed" value="true" />
+      <created>1743524147240</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1743524147240</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Zbran, Ryby - settery" />
     <MESSAGE value="Trida Postavy - nacteniPostav" />
     <MESSAGE value="Trida JdiDo" />
     <MESSAGE value="Presunuti nacitani postav a predmetu do tridy Svet" />
@@ -438,7 +524,8 @@
     <MESSAGE value="Souboj uprava" />
     <MESSAGE value="chyby" />
     <MESSAGE value="Nacitani predmetu pro obchodnika" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nacitani predmetu pro obchodnika" />
+    <MESSAGE value="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

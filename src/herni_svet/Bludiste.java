@@ -26,7 +26,7 @@ public class Bludiste {
         this.mapa = new HashMap<>();
     }
     public boolean nacteniBludiste(){
-            try (BufferedReader br = new BufferedReader(new FileReader("bludiste.txt"))) {
+            try (BufferedReader br = new BufferedReader(new FileReader("src/bludiste.txt"))) {
                 String radek;
                 while ((radek = br.readLine()) != null) {
                     String[] casti = radek.split(" ");
