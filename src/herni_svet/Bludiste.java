@@ -10,6 +10,12 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.HashMap;
 
+/**
+ * Trida Bludiste reprezentuje predposledni mistnost, kterou hrac musi projit aby se dostal k finalnimu souboji.
+ * Ke vstupu do posledni mistnosti potrebuje klic.
+ *
+ * @author Tomas Voborny
+ */
 public class Bludiste {
     private static final int VYCHOD = 6;
     private int pozice = 0;
@@ -25,6 +31,12 @@ public class Bludiste {
         this.svet = svet;
         this.mapa = new HashMap<>();
     }
+
+    /**
+     * Metoda pro nacteni mapy bludiste ze souboru.
+     *
+     * @return true pokud bylo bludiste uspesne nacteno, jinak false
+     */
     public boolean nacteniBludiste(){
             try (BufferedReader br = new BufferedReader(new FileReader("src/bludiste.txt"))) {
                 String radek;
@@ -43,6 +55,12 @@ public class Bludiste {
 
     }
 
+    /**
+     * Hrac prochazi labyrintem, vybira dvere vlevo nebo vpravo, a ztraci zivoty. Pokud dosahne vchodu a ma klic, muze
+     * projit dal. Pokud nemá klic, dvere jsou zamčené.
+     *
+     * @return zprava o stavu hry - zda hrac uspel nebo selhal
+     */
     public String spustit() {
         nacteniBludiste();
 

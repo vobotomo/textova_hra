@@ -8,18 +8,37 @@
     import java.util.Random;
     import java.util.Scanner;
 
+    /**
+     * Trida Souboj slouzi k provedeni souboje mezi hracem a nepritelem.
+     *
+     * @author Tomas Voborny
+     */
     public class Souboj {
 
         private Hrac hrac;
         private Svet svet;
         private Nepritel nepritel;
 
+        /**
+         * Konstruktor pro vytvoreni souboje mezi hracem a nepritelem.
+         *
+         * @param hrac Hrac, ktery se zucastnuje souboje
+         * @param nepritel Nepritel, proti kteremu hrac bojuje
+         * @param svet Svet, ve kterem se souboj odehrava
+         */
         public Souboj(Hrac hrac, Nepritel nepritel, Svet svet) {
             this.hrac = hrac;
             this.nepritel = nepritel;
             this.svet = svet;
         }
 
+        /**
+         * Zahajuje souboj mezi hracem a nepritelem. Hrac muze volit mezi utokem a obranou.
+         * Nepritel muze reagovat ruznymi zpusoby. Souboj pokracuje, dokud nekdo neztrati vsechny zivoty.
+         *
+         * @param sc Scanner pro vstupy od uzivatele
+         * @return Zprava o vysledku souboje
+         */
         public String zahajitSouboj(Scanner sc) {
 
             System.out.println("Narazil jsi na nepritele: " + nepritel.getJmeno());

@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="SvetTest">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro vsechny commandy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Mluv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Mluv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Napoveda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Napoveda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pomoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pomoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Pouzit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Pouzit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/Prozkoumej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Prozkoumej.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Mistnost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +236,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="12044000" />
+      <workItem from="1743523210583" duration="13197000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -547,7 +542,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743534191264</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="JavaDocs pro vsechny commandy">
+      <option name="closed" value="true" />
+      <created>1743535691538</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1743535691538</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Vzit" />
     <MESSAGE value="Trida Zahod" />
     <MESSAGE value="Trida Vyber" />
     <MESSAGE value="Trida Mistnost: metoda pridatPropojeni" />
@@ -590,7 +592,8 @@
     <MESSAGE value="SoubojTest" />
     <MESSAGE value="PouzitTest" />
     <MESSAGE value="SvetTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="SvetTest" />
+    <MESSAGE value="JavaDocs pro vsechny commandy" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro vsechny commandy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

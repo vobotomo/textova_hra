@@ -2,6 +2,11 @@ package herni_svet;
 
 import java.util.Arrays;
 
+/**
+ * Trida pro vytvoreni mistnosti ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Mistnost {
 
     private int ID;
@@ -9,9 +14,14 @@ public class Mistnost {
     private int[] propojeneMistnosti;
 
 
-    public Mistnost() {
-    }
 
+    /**
+     * Konstruktor pro vytvoreni mistnosti s urcitym ID, jmenem a propojenimy mistnostmi.
+     *
+     * @param ID ID mistnosti
+     * @param jmeno Nazev mistnosti
+     * @param propojeneMistnosti Pole propojenych mistnosti
+     */
     public Mistnost(int ID, String jmeno, String[] propojeneMistnosti) {
         this.ID = ID;
         this.jmeno = jmeno;
@@ -21,6 +31,11 @@ public class Mistnost {
         }
     }
 
+    /**
+     * Metoda pro pridani propojeni s jinou mistnosti.
+     *
+     * @param mistnostID ID mistnosti, kterou chceme propojit
+     */
     public void pridatPropojeni(int mistnostID) {
         for (int id : propojeneMistnosti) {
             if (id == mistnostID) {

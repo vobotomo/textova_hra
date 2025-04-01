@@ -15,6 +15,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/**
+ * Trida Svet reprezentuje herni svet, obsahujici mistnosti, predmety a postavy.
+ *
+ * @author Tomas Voborny
+ */
 public class Svet {
 
 
@@ -22,6 +27,9 @@ public class Svet {
     private int poziceHrace = 0;
 
 
+    /**
+     * Konstruktor, kde se nacitaji vsechny predmety, postavy a mapa.
+     */
     public Svet() {
         nacteniMapy();
         nacteniPredmetu();
@@ -29,6 +37,11 @@ public class Svet {
         nacteniPostav();
     }
 
+    /**
+     * Nacte mapu sveta z textoveho souboru a naplni HashMapu mistnostmi.
+     *
+     * @return True pokud je mapa nactena uspesne, jinak false.
+     */
     public boolean nacteniMapy() {
         try (BufferedReader br = new BufferedReader(new FileReader("src/mapa.txt"))) {
             String line;
@@ -51,6 +64,11 @@ public class Svet {
 
     private ArrayList<Predmet> predmety;
 
+    /**
+     * Nacte predmety ze souboru a prida je do seznamu predmetu ve hre.
+     *
+     * @return True pokud jsou predmety uspesne nacteny, jinak false.
+     */
     public boolean nacteniPredmetu() {
         predmety = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("src/predmety.txt"))) {
@@ -108,6 +126,11 @@ public class Svet {
 
     private ArrayList<Predmet> predmetyObchod;
 
+    /**
+     * Nacte predmety pro obchod z textoveho souboru a prida je do seznamu.
+     *
+     * @return True pokud jsou predmety uspesne nacteny, jinak false.
+     */
     public boolean nacteniPredmetuObchod() {
         predmetyObchod = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("src/predmetyObchod.txt"))) {
@@ -139,7 +162,11 @@ public class Svet {
 
     private ArrayList<Postava> postavy;
 
-
+    /**
+     * Nacte postavy ze souboru a prida je do seznamu.
+     *
+     * @return True pokud byly postavy uspesne nacteny, jinak false.
+     */
     public boolean nacteniPostav() {
         postavy = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("src/postavy.txt"))) {
@@ -169,6 +196,12 @@ public class Svet {
         }
     }
 
+    /**
+     * Presune hrace do cilove mistnosti, pokud je propojena se soucasnou mistnosti.
+     *
+     * @param cilovaMistnost ID cilove mistnosti, kam se chce hrac presunout.
+     * @return True pokud je presun uspesny, jinak false.
+     */
     public boolean presunout(int cilovaMistnost) {
         if (svet.containsKey(cilovaMistnost)) {
             Mistnost aktualniMistnost = svet.get(poziceHrace);
@@ -183,12 +216,22 @@ public class Svet {
         return false;
     }
 
+    /**
+     * Odemkne Tajemny chram pridanim propojeni do mistnosti s ID 7.
+     *
+     * @return Zprava o uspechu.
+     */
     public String odemknoutTajemnyChram() {
         Mistnost labyrint = svet.get(6);
         labyrint.pridatPropojeni(7);
         return "Tajemny chram je nyni pristupny!";
     }
 
+    /**
+     * Zamkne Tajemny chram odstranenim propojeni k mistnosti 7.
+     *
+     * @return Zprava o uspechu.
+     */
     public String zamknoutTajemnyChram() {
         svet.get(6).setPropojeneMistnosti(new int[]{2});
         return "Tajemny chram je opet nepristupny.";
@@ -222,9 +265,6 @@ public class Svet {
         this.postavy = postavy;
     }
 
-    public void setPredmetyObchod(ArrayList<Predmet> predmetyObchod) {
-        this.predmetyObchod = predmetyObchod;
-    }
 
     public void setPredmety(ArrayList<Predmet> predmety) {
         this.predmety = predmety;

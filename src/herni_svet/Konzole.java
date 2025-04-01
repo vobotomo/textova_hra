@@ -6,6 +6,11 @@ import postavy.Hrac;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Trida Konzole je hlavni herni rozhrani pro komunikaci s hracem.
+ *
+ * @author Tomas Voborny
+ */
 public class Konzole {
 
     private Scanner sc = new Scanner(System.in);
@@ -13,6 +18,11 @@ public class Konzole {
     private HashMap<String, Command> prikazy;
 
 
+    /**
+     * Metoda pro inicializaci hry a vytvoreni dostupnych prikazu.
+     *
+     * @param svet Svet, kde probiha hra
+     */
     public void inicializace(Svet svet) {
         Hrac hrac = new Hrac(svet.getPoziceHrace());
         hrac.setAktualniMistnost(0);
@@ -32,6 +42,9 @@ public class Konzole {
         prikazy.put("mluv", new Mluv(svet));
     }
 
+    /**
+     * Metoda pro provedeni prikazu zadaneho hracem.
+     */
     public void provedPrikaz() {
         System.out.println(">");
         String prikaz = sc.next();
@@ -43,7 +56,9 @@ public class Konzole {
         }
     }
 
-
+    /**
+     * Metoda pro spusteni cele hry.
+     */
     public void start() {
         Svet svet = new Svet();
         inicializace(svet);
