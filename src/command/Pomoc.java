@@ -5,11 +5,22 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Trida pro zobrazeni prikazu ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Pomoc implements Command {
 
     ArrayList<String> prikazy;
 
 
+    /**
+     * Provadi cteni prikazu ze souboru "prikazy.txt" a vraci jejich vypis.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Seznam prikazu.
+     */
     @Override
     public String execute(Scanner sc) {
         prikazy = new ArrayList<>();

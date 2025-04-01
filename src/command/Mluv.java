@@ -8,6 +8,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Trida pro mluveni ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Mluv implements Command {
     private HashMap<Integer,String> vety;
     private Svet svet;
@@ -17,6 +22,12 @@ public class Mluv implements Command {
         this.svet = svet;
     }
 
+    /**
+     * Provadi cteni textu ze souboru "pribeh.txt" a vraci vetu podle pozice hrace.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Veta z textoveho souboru, ktera je prirazena k mistnosti, ve ktere se hrac nachazi.
+     */
     @Override
     public String execute(Scanner sc) {
         try (BufferedReader br = new BufferedReader(new FileReader("pribeh.txt"))) {

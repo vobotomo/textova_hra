@@ -6,6 +6,11 @@ import postavy.Hrac;
 
 import java.util.Scanner;
 
+/**
+ * Trida, ktera umoznuje hraci vzit predmet v dane mistnosti.
+ *
+ * @author Tomas Voborny
+ */
 public class Vzit implements Command {
     private Hrac hrac;
     private Svet svet;
@@ -15,6 +20,14 @@ public class Vzit implements Command {
         this.svet = svet;
     }
 
+    /**
+     * Provadi akci pro zvednuti predmetu, pokud se nachazi v mistnosti, kde se
+     * hrac nachazi, a pridani do jeho inventare.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Zprava o tom, zda byl predmet pridan do inventare, nebo ze
+     *         predmet v mistnosti neni
+     */
     @Override
     public String execute(Scanner sc) {
         for (int i = 0; i < svet.getPredmety().size(); i ++) {

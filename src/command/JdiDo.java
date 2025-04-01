@@ -5,6 +5,11 @@ import herni_svet.Svet;
 
 import java.util.Scanner;
 
+/**
+ * Trida pro presun do jine mistnosti ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class JdiDo implements Command {
 
 
@@ -16,6 +21,13 @@ public class JdiDo implements Command {
         this.bludiste = bludiste;
     }
 
+    /**
+     * Provadi presun hrace do zadane mistnosti podle indexu.
+     * Pokud je index 6, spusti se bludiste.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Vysledek presunu do mistnosti nebo zprava o chybe
+     */
     @Override
     public String execute(Scanner sc) {
         System.out.println("Zadej index mistnosti." + "\n" + ">");

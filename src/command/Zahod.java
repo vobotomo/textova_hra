@@ -7,6 +7,11 @@ import predmety.Predmet;
 
 import java.util.Scanner;
 
+/**
+ * Trida umoznujici hraci zahodit predmet z inventare.
+ *
+ * @author Tomas Voborny
+ */
 public class Zahod implements Command {
     private Hrac hrac;
     private Svet svet;
@@ -16,6 +21,15 @@ public class Zahod implements Command {
         this.svet = svet;
     }
 
+    /**
+     * Provadi akci pro zahodeni predmetu z inventare a jeho umisteni do
+     * mistnosti, kde se hrac nachazi. Pokud je predmet klic, zavola se metoda
+     * pro zamknuti tajemneho chramu.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Zprava o tom, zda byl predmet zahoden nebo zda nebyl nalezen
+     *         v inventari
+     */
     @Override
     public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){

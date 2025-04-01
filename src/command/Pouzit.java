@@ -7,6 +7,11 @@ import predmety.Ryby;
 
 import java.util.Scanner;
 
+/**
+ * Trida, ktera hraci umozni pouzit predmet.
+ *
+ * @author Tomas Voborny
+ */
 public class Pouzit implements Command {
     private Hrac hrac;
     private Svet svet;
@@ -17,6 +22,12 @@ public class Pouzit implements Command {
     }
 
 
+    /**
+     * Provadi akci pri pouziti predmetu z inventare hrace.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Vysledek akce, zda se predmet podarilo pouzit nebo ne.
+     */
     @Override
     public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){

@@ -8,6 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Trida pro napovedu ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Napoveda implements Command{
 
     private ArrayList<String> napovedy;
@@ -20,6 +25,12 @@ public class Napoveda implements Command{
         this.svet = svet;
     }
 
+    /**
+     * Provadi cteni textu ze souboru "napoveda.txt" a vraci napovedu podle pozice hrace.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Napoveda podle pozice hrace v prostredi hry.
+     */
     @Override
     public String execute(Scanner sc) {
         try (BufferedReader br = new BufferedReader(new FileReader("src/napoveda.txt"))) {

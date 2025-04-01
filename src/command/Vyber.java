@@ -5,6 +5,11 @@ import predmety.Zbran;
 
 import java.util.Scanner;
 
+/**
+ * Trida, ktera umozni hraci vybrat jeho zbran.
+ *
+ * @author Tomas Voborny
+ */
 public class Vyber implements Command {
     private Hrac hrac;
 
@@ -12,6 +17,13 @@ public class Vyber implements Command {
         this.hrac = hrac;
     }
 
+    /**
+     * Provadi akci pro vybrani zbrane z inventare hrace a zmeni hracovu silu, podle dane zbrane.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Zprava o vybrane zbrani a zvysene sile hrace, nebo informace,
+     *         ze zbran neni v inventari
+     */
     @Override
     public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){

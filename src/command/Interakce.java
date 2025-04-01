@@ -9,6 +9,12 @@ import herni_svet.Svet;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+
+/**
+ * Tato trida slouzi k interakci hrace s postavami ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Interakce implements Command {
 
     private Hrac hrac;
@@ -19,6 +25,15 @@ public class Interakce implements Command {
         this.svet = svet;
     }
 
+    /**
+     * Provadi interakci s postavou v mistnosti, ve ktere se hrac nachazi.
+     * Pokud hrac narazi na nepratele, ma moznost zahajit souboj.
+     * Pokud hrac narazi na obchodnika, ma moznost nakupovat predmety.
+     * Pokud hrac narazi na jinou postavu, zobrazi se jeji dialog.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Vysledek interakce
+     */
     @Override
     public String execute(Scanner sc) {
         String vysledek = "";

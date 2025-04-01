@@ -6,6 +6,11 @@ import predmety.Predmet;
 
 import java.util.Scanner;
 
+/**
+ * Trida, ktera umozni hraci prozkoumat mistnost.
+ *
+ * @author Tomas Voborny
+ */
 public class Prozkoumej implements Command {
     private Svet svet;
 
@@ -13,7 +18,12 @@ public class Prozkoumej implements Command {
     public Prozkoumej(Svet svet) {
         this.svet = svet;
     }
-
+    /**
+     * Provadi akci prozkoumani mistnosti a zobrazeni predmetu a postav v ni.
+     *
+     * @param sc Scanner pro cteni vstupu od uzivatele
+     * @return Seznam predmetu a postav nachazejicich se v aktualni mistnosti
+     */
     @Override
     public String execute(Scanner sc) {
         StringBuilder a = new StringBuilder();
