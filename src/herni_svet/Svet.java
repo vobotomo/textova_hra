@@ -1,6 +1,7 @@
 package herni_svet;
 
 import postavy.Nepritel;
+import postavy.Obchodnik;
 import postavy.Postava;
 import predmety.Klic;
 import predmety.Predmet;
@@ -151,6 +152,9 @@ public class Svet {
                 int misto = Integer.parseInt(data[4]);
 
 
+                if (data[0].equals("obchodnik")) {
+                    postavy.add(new Obchodnik(ID, jmeno, dialog, misto));
+                }
                 if (data[0].equals("nepritel")) {
                     int sila = Integer.parseInt(data[5]);
                     int zivoty = Integer.parseInt(data[6]);

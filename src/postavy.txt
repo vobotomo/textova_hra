@@ -1,6 +1,6 @@
 postava;1;Mudrc; ;0
 nepritel;2;Obr; ;1;10;20
-postava;3;Vila; ;4
+obchodnik;3;Vila; ;4
 nepritel;4;Vlk; ;2;5;10
 nepritel;5;Mrtvy rytir; ;3;15;30
 nepritel;6;Veleslav; ;7;25;50

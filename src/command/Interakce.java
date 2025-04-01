@@ -21,6 +21,7 @@ public class Interakce implements Command {
 
     @Override
     public String execute(Scanner sc) {
+        String vysledek = "";
         Postava nalezenaPostava = null;
 
         for (Postava postava : svet.getPostavy()) {
@@ -31,7 +32,7 @@ public class Interakce implements Command {
         }
 
         if (nalezenaPostava == null) {
-            return "V mistnosti neni zadna postava, se kterou bys mohl interagovat.";
+            vysledek = "V mistnosti neni zadna postava, se kterou bys mohl interagovat.";
         }
 
         System.out.println("Narazil jsi na: " + nalezenaPostava.getJmeno());
@@ -44,7 +45,7 @@ public class Interakce implements Command {
             if (odpoved.equals("ano")) {
                 new Souboj(hrac, (Nepritel) nalezenaPostava, svet).zahajitSouboj();;
             } else {
-                return "Rozhodl ses neutocit a ustoupit.";
+                vysledek = "Rozhodl ses neutocit a ustoupit.";
             }
         } else if (nalezenaPostava instanceof Obchodnik) {
             System.out.println(nalezenaPostava.getJmeno() + " je obchodnik.");
@@ -52,14 +53,14 @@ public class Interakce implements Command {
             String odpoved = sc.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
-                return ((Obchodnik) nalezenaPostava).obchod(hrac, svet);
+                vysledek = ((Obchodnik) nalezenaPostava).obchod(hrac, svet, sc);
             } else {
-                return "Rozhodl sis nic nekoupit.";
+                vysledek = "Rozhodl sis nic nekoupit.";
             }
         } else {
-            return nalezenaPostava.getDialog();
+            vysledek = nalezenaPostava.getDialog();
         }
-        return "";
+        return vysledek;
     }
 
     @Override
