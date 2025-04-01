@@ -2,6 +2,10 @@ package predmety;
 
 import postavy.Hrac;
 
+/**
+ * Trida reprezentujici zbran jako predmet, ktery muze byt pouzit k zvyseni sily hrace.
+ * Dedici z tridy {@link Predmet}.
+ */
 public class Zbran extends Predmet {
 
     private int sila;
@@ -16,7 +20,11 @@ public class Zbran extends Predmet {
         this.sila = sila;
     }
 
-
+    /**
+     * Zvysi silu hrace pri vybery zbrane.
+     *
+     * @param hrac hrac, ktery vybere zbran
+     */
     public void setSilaHrace(Hrac hrac){
         hrac.setSila(hrac.getSila()+getSila());
     }

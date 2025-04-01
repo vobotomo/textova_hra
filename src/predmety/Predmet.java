@@ -1,5 +1,8 @@
 package predmety;
 
+/**
+ * Trida reprezentujici predmet ve hre.
+ */
 public class Predmet {
 
     private int ID;

@@ -2,6 +2,10 @@ package predmety;
 
 import postavy.Hrac;
 
+/**
+ * Trida reprezentujici ryby jako predmet, ktery muze byt pouzit k leceni.
+ * Dedici z tridy {@link Predmet}.
+ */
 public class Ryby extends Predmet {
 
     private int zivoty;

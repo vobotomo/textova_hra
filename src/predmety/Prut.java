@@ -1,5 +1,9 @@
 package predmety;
 
+/**
+ * Trida reprezentujici prut jako predmet ve hre.
+ * Dedici z tridy {@link Predmet}.
+ */
 public class Prut extends Predmet{
 
 

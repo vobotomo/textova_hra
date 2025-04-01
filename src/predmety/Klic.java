@@ -1,5 +1,9 @@
 package predmety;
 
+/**
+ * Trida reprezentujici klic.
+ * Dedici z tridy {@link Predmet}.
+ */
 public class Klic extends Predmet{
 
 
