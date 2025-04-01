@@ -34,7 +34,7 @@ public class Pouzit implements Command {
                 for(int i = 0; i < hrac.getInventar().getInventar().size(); i++){
                     if(hrac.getInventar().getInventar().get(i) instanceof Prut){
                         hrac.getInventar().getInventar().remove(i);
-                        hrac.getInventar().getInventar().add(svet.getPredmety().get(5));
+                        hrac.getInventar().getInventar().add(svet.getPredmety().get(4));
                         return "Prut byl pouzit.";
                     }
                 }

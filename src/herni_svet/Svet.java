@@ -217,4 +217,20 @@ public class Svet {
     public void setPoziceHrace(int poziceHrace) {
         this.poziceHrace = poziceHrace;
     }
+
+    public void setPostavy(ArrayList<Postava> postavy) {
+        this.postavy = postavy;
+    }
+
+    public void setPredmetyObchod(ArrayList<Predmet> predmetyObchod) {
+        this.predmetyObchod = predmetyObchod;
+    }
+
+    public void setPredmety(ArrayList<Predmet> predmety) {
+        this.predmety = predmety;
+    }
+
+    public void setSvet(HashMap<Integer, Mistnost> svet) {
+        this.svet = svet;
+    }
 }
