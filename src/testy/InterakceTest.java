@@ -16,6 +16,11 @@ import java.util.Scanner;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * Testovaci trida pro interakce v hernim svete.
+ *
+ *  @author Tomas Voborny, ChatGPT pomohlo s praci se scannerem
+ */
 public class InterakceTest {
     private Hrac hrac;
     private Svet svet;
@@ -29,6 +34,10 @@ public class InterakceTest {
         interakce = new Interakce(hrac, svet);
     }
 
+    /**
+     * Testuje interakci s nepratelem, kdy hrac zvolil odpoved "ne" pro utok.
+     * Ocekavany vysledek je, ze hrac ustoupi.
+     */
     @Test
     void testInterakceSNepritelem() {
         String simulatedInput = "ne\n";
@@ -40,6 +49,10 @@ public class InterakceTest {
         assertEquals("Rozhodl ses neutocit a ustoupit.", vysledek);
     }
 
+    /**
+     * Testuje interakci s obchodnikem, kdy hrac ma dostatek vlcich kosti a zakoupi predmet.
+     * Ocekavany vysledek je zprava o zakoupeni predmetu.
+     */
     @Test
     void testInterakceSObchodnikem() {
         Obchodnik obchodnik = new Obchodnik(1, "Vila", "ahoj", 4);
@@ -61,6 +74,10 @@ public class InterakceTest {
         assertEquals("Zakoupil jsi: Lektvar odvahy", vysledek);
     }
 
+    /**
+     * Testuje situaci, kdy v mistnosti neni zadna postava, se kterou by mohl hrac interagovat.
+     * Ocekavany vysledek je zprava, ze v mistnosti neni zadna postava.
+     */
     @Test
     void testZadnaPostavaVMistnosti() {
         svet.setPoziceHrace(99);
@@ -68,9 +85,5 @@ public class InterakceTest {
         assertEquals("V mistnosti neni zadna postava, se kterou bys mohl interagovat.", vysledek);
     }
 
-    private void nastavitVstup(String data) {
-        InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream(data.getBytes()));
-        System.setIn(stdin);
-    }
+
 }

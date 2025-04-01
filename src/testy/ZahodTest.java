@@ -11,6 +11,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.Scanner;
 import java.io.ByteArrayInputStream;
 
+/**
+ * Testovaci trida pro tridu Zahod.
+ *
+ *  @author Tomas Voborny, ChatGPT pomohlo s praci se scannerem
+ */
 public class ZahodTest {
     private Hrac hrac;
     private Svet svet;
@@ -23,6 +28,9 @@ public class ZahodTest {
         zahod = new Zahod(hrac, svet);
     }
 
+    /**
+     * Testuje, ze predmet je uspesne zahozen, odstraneny z inventare.
+     */
     @Test
     void testZahodPredmetUspech() {
         Predmet predmet = new Predmet(1, "Mec", "Silna zbran", 0);
@@ -36,6 +44,9 @@ public class ZahodTest {
         assertTrue(svet.getPredmety().contains(predmet), "Predmet by mel byt pridan do sveta.");
     }
 
+    /**
+     * Testuje, ze se vypise zprava, pokud se hrac pokusi zahodit predmet, ktery se nenachazi v inventari.
+     */
     @Test
     void testZahodNeexistujiciPredmet() {
         Scanner sc = new Scanner(new ByteArrayInputStream("NehmotnyMec\n".getBytes()));
@@ -44,6 +55,9 @@ public class ZahodTest {
         assertEquals("Inventar je prazdny.", result);
     }
 
+    /**
+     * Testuje, ze po zahodeni zamykaciho klice je tajemny chram pro hrace nedostupny.
+     */
     @Test
     void testZahodZamykaciKlic() {
         Klic klic = new Klic(2, "Klic", "Odemkne chram", 0);
@@ -56,6 +70,9 @@ public class ZahodTest {
         assertEquals(svet.zamknoutTajemnyChram(), "Tajemny chram je opet nepristupny.");
     }
 
+    /**
+     * Testuje, ze se vypise zprava, pokud je inventar prazdny.
+     */
     @Test
     void testZahodPrazdnyInventar() {
         Scanner sc = new Scanner(new ByteArrayInputStream("Mec\n".getBytes()));

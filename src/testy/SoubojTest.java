@@ -12,8 +12,17 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.Scanner;
 
+/**
+ * Testovaci trida pro souboj mezi hracem a nepritelem.
+ *
+ * @author Tomas Voborny, ChatGPT pomohlo s praci se scannerem
+ */
 public class SoubojTest {
 
+    /**
+     * Testuje zahajeni souboje mezi hracem a nepritelem.
+     * Ocekavany vysledek je vitezstvi hrace a snizeni zivotu nepritele na nulu.
+     */
     @Test
     public void testZahajitSouboj() {
         Nepritel nepritel = new Nepritel(1, "Obr", "", 1, 10, 20);

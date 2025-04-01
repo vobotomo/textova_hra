@@ -14,8 +14,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Testovaci trida pro prikaz "Pouzit", ktery slouzi k pouziti predmetu z inventare.
+ *
+ *  @author Tomas Voborny, ChatGPT pomohlo s praci se scannerem
+ */
 public class PouzitTest {
 
+    /**
+     * Testuje prazdny inventar.
+     * Ocekavany vysledek je zprava, ze inventar je prazdny.
+     */
     @Test
     public void testInventarJePrazdny() {
         Svet svet = new Svet();
@@ -31,6 +40,10 @@ public class PouzitTest {
         assertEquals("Inventar je prazdny.", vysledek);
     }
 
+    /**
+     * Testuje pokus o pouziti prutu ve spatne mistnosti.
+     * Ocekavany vysledek je zprava, ze predmet nelze pouzit.
+     */
     @Test
     public void testPouzitPrutVeSpatneMistnosti() {
         Svet svet = new Svet();
@@ -49,6 +62,10 @@ public class PouzitTest {
         assertEquals("Prut nelze pouzit. Hrac je ve spatne mistnost.", vysledek);
     }
 
+    /**
+     * Testuje pouziti prutu ve spravne mistnosti.
+     * Ocekavany vysledek je zprava o uspechu pri pouziti predmetu.
+     */
     @Test
     public void testPouzitPrutVeSpravneMistnosti() {
         Svet svet = new Svet();
@@ -67,6 +84,10 @@ public class PouzitTest {
         assertEquals("Prut byl pouzit.", vysledek);
     }
 
+    /**
+     * Testuje pouziti ryby.
+     * Ocekavany vysledek je zprava, ze ryba byla snezena a hracovy zivoty byly zvyseny.
+     */
     @Test
     public void testPouzitRybu() {
         Svet svet = new Svet();
@@ -83,6 +104,10 @@ public class PouzitTest {
         assertEquals("Ryba byla snezena.", vysledek);
     }
 
+    /**
+     * Testuje pokus o pouziti neexistujiciho predmetu.
+     * Ocekavany vysledek je zprava, ze tento predmet neexistuje.
+     */
     @Test
     public void testPouzitNeznamyPredmet() {
         Svet svet = new Svet();

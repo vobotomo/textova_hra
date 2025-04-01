@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro Postavy">
-      <change beforePath="$PROJECT_DIR$/src/predmety/Inventar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Inventar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/predmety/Klic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Klic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/predmety/Predmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Predmet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/predmety/Prut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/predmety/Prut.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro Predmety">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/InterakceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/InterakceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/JdiDoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/JdiDoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/PouzitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/PouzitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/SoubojTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/SoubojTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/SvetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/SvetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testy/ZahodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/ZahodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +238,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="14162000" />
+      <workItem from="1743523210583" duration="15295000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -565,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743537308159</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="JavaDocs pro Predmety">
+      <option name="closed" value="true" />
+      <created>1743537614480</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1743537614480</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +594,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Mistnost: metoda pridatPropojeni" />
     <MESSAGE value="Trida Svet: metoda odemknoutTajemnyChram" />
     <MESSAGE value="Trida Zahod upravena pro klic" />
     <MESSAGE value="Trida Vzit upravena pro klic" />
@@ -608,7 +618,8 @@
     <MESSAGE value="JavaDocs pro vsechny commandy" />
     <MESSAGE value="JavaDocs pro herni_svet" />
     <MESSAGE value="JavaDocs pro Postavy" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro Postavy" />
+    <MESSAGE value="JavaDocs pro Predmety" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro Predmety" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
