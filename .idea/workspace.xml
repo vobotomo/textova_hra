@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro vsechny commandy">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro herni_svet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Konzole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Konzole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Mistnost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Mistnost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Hrac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Hrac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Nepritel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Nepritel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/postavy/Obchodnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +235,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="13197000" />
+      <workItem from="1743523210583" duration="13848000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -550,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743535691538</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="JavaDocs pro herni_svet">
+      <option name="closed" value="true" />
+      <created>1743536877580</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1743536877580</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Zahod" />
     <MESSAGE value="Trida Vyber" />
     <MESSAGE value="Trida Mistnost: metoda pridatPropojeni" />
     <MESSAGE value="Trida Svet: metoda odemknoutTajemnyChram" />
@@ -593,7 +599,8 @@
     <MESSAGE value="PouzitTest" />
     <MESSAGE value="SvetTest" />
     <MESSAGE value="JavaDocs pro vsechny commandy" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro vsechny commandy" />
+    <MESSAGE value="JavaDocs pro herni_svet" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro herni_svet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

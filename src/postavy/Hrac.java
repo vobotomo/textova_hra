@@ -2,6 +2,11 @@ package postavy;
 import predmety.Inventar;
 
 
+/**
+ * Trida Hrac reprezentuje hrace ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Hrac {
 
     private int sila;
@@ -10,7 +15,11 @@ public class Hrac {
     private int aktualniMistnost;
     private int vlciKosti;
 
-
+    /**
+     * Konstruktor tridy Hrac, ktery inicializuje hrace se zakladnemi atributy.
+     *
+     * @param mistnost ID mistnosti, kde se hrac nachazi pri vytvoreni.
+     */
     public Hrac(int mistnost) {
         this.zivoty = 100;
         this.sila = 10;

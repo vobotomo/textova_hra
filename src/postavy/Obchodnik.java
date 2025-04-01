@@ -5,6 +5,11 @@ import predmety.Predmet;
 
 import java.util.Scanner;
 
+/**
+ * Trida Obchodnik reprezentuje postavu, od ktere hrac muze nakupovat predmety za vlci kosti.
+ *
+ * @author Tomas Voborny
+ */
 public class Obchodnik extends Postava {
 
     public Obchodnik(int ID, String jmeno, String dialog, int misto) {
@@ -12,6 +17,14 @@ public class Obchodnik extends Postava {
     }
 
 
+    /**
+     * Metoda pro realizaci obchodu mezi hráčem a obchodníkem.
+     *
+     * @param hrac
+     * @param svet
+     * @param sc Scanner pro příjem vstupů od hráče
+     * @return Výsledek obchodu
+     */
     public String obchod(Hrac hrac, Svet svet, Scanner sc) {
         for(Postava postava : svet.getPostavy()){
             if(svet.getPoziceHrace()== postava.getMisto()){

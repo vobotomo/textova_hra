@@ -1,5 +1,10 @@
 package postavy;
 
+/**
+ * Trida Postava slouzi k vytvoreni postavy ve hre.
+ *
+ * @author Tomas Voborny
+ */
 public class Postava {
 
 
