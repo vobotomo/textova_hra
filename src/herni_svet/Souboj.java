@@ -13,16 +13,14 @@
         private Hrac hrac;
         private Svet svet;
         private Nepritel nepritel;
-        private Scanner sc;
 
         public Souboj(Hrac hrac, Nepritel nepritel, Svet svet) {
             this.hrac = hrac;
             this.nepritel = nepritel;
             this.svet = svet;
-            this.sc = new Scanner(System.in);
         }
 
-        public String zahajitSouboj() {
+        public String zahajitSouboj(Scanner sc) {
 
             System.out.println("Narazil jsi na nepritele: " + nepritel.getJmeno());
             System.out.println(nepritel.getDialog());
@@ -32,7 +30,6 @@
                 for (Predmet predmet : hrac.getInventar().getInventar()) {
                     if (predmet.getJmeno().equalsIgnoreCase("Lektvar odvahy")) {
                         System.out.println("Mas Lektvar odvahy! Chces ho pouzit? (ano/ne)");
-                        Scanner sc = new Scanner(System.in);
                         String odpoved = sc.nextLine().toLowerCase();
 
                         if (odpoved.equals("ano")) {

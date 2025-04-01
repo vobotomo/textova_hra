@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JdiDoTest">
-      <change afterPath="$PROJECT_DIR$/src/testy/InterakceTest.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="InterakceTest">
+      <change afterPath="$PROJECT_DIR$/src/testy/SoubojTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Svet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Svet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/postavy/Obchodnik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/postavy/Obchodnik.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +62,9 @@
     "JUnit.JdiDoTest.testNeplatnyVstup.executor": "Run",
     "JUnit.JdiDoTest.testPresunDoPlatneMistnosti.executor": "Run",
     "JUnit.JdiDoTest.testSpusteniBludiste.executor": "Run",
+    "JUnit.SoubojTest.executor": "Run",
+    "JUnit.SoubojTest.testSoubojObrana.executor": "Run",
+    "JUnit.SoubojTest.testSoubojUtok.executor": "Run",
     "JUnit.ZahodTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -98,7 +98,7 @@
       <recent name="testy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InterakceTest.testInterakceSNepritelem">
+  <component name="RunManager" selected="JUnit.SoubojTest">
     <configuration name="InterakceTest.testInterakceSNepritelem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <extension name="coverage">
@@ -110,38 +110,6 @@
       <option name="PACKAGE_NAME" value="testy" />
       <option name="MAIN_CLASS_NAME" value="testy.InterakceTest" />
       <option name="METHOD_NAME" value="testInterakceSNepritelem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InterakceTest.testInterakceSObchodnikem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.InterakceTest" />
-      <option name="METHOD_NAME" value="testInterakceSObchodnikem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InterakceTest.testZadnaPostavaVMistnosti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.InterakceTest" />
-      <option name="METHOD_NAME" value="testZadnaPostavaVMistnosti" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdiDoTest.testBludisteBezKlice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SoubojTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled2" />
       <extension name="coverage">
         <pattern>
@@ -171,8 +139,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.JdiDoTest" />
-      <option name="METHOD_NAME" value="testBludisteBezKlice" />
+      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoubojTest.testSoubojObrana" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
+      <option name="METHOD_NAME" value="testSoubojObrana" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoubojTest.testSoubojUtok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testy" />
+      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
+      <option name="METHOD_NAME" value="testSoubojUtok" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SoubojTest" />
+        <item itemvalue="JUnit.SoubojTest.testSoubojObrana" />
+        <item itemvalue="JUnit.SoubojTest.testSoubojUtok" />
         <item itemvalue="JUnit.InterakceTest.testInterakceSNepritelem" />
         <item itemvalue="JUnit.JdiDoTest" />
-        <item itemvalue="JUnit.InterakceTest.testInterakceSObchodnikem" />
-        <item itemvalue="JUnit.InterakceTest.testZadnaPostavaVMistnosti" />
-        <item itemvalue="JUnit.JdiDoTest.testBludisteBezKlice" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +232,7 @@
       <workItem from="1742838219786" duration="4609000" />
       <workItem from="1742922369937" duration="14110000" />
       <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="8175000" />
+      <workItem from="1743523210583" duration="9171000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -507,14 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743525621496</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="InterakceTest">
+      <option name="closed" value="true" />
+      <created>1743531606850</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1743531606850</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida JdiDo" />
     <MESSAGE value="Presunuti nacitani postav a predmetu do tridy Svet" />
     <MESSAGE value="Trida Prozkoumej" />
     <MESSAGE value="Trida Napoveda" />
@@ -539,7 +545,8 @@
     <MESSAGE value="Nacitani predmetu pro obchodnika" />
     <MESSAGE value="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest" />
     <MESSAGE value="JdiDoTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="JdiDoTest" />
+    <MESSAGE value="InterakceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="InterakceTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
