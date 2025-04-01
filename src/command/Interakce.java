@@ -13,7 +13,6 @@ public class Interakce implements Command {
 
     private Hrac hrac;
     private Svet svet;
-    private Scanner scanner = new Scanner(System.in);
 
     public Interakce(Hrac hrac, Svet svet) {
         this.hrac = hrac;
@@ -21,7 +20,7 @@ public class Interakce implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         Postava nalezenaPostava = null;
 
         for (Postava postava : svet.getPostavy()) {
@@ -40,7 +39,7 @@ public class Interakce implements Command {
         if (nalezenaPostava instanceof Nepritel) {
             System.out.println(nalezenaPostava.getJmeno() + " se chysta zautocit!");
             System.out.println("Chces bojovat? (ano/ne)");
-            String odpoved = scanner.nextLine().toLowerCase();
+            String odpoved = sc.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
                 new Souboj(hrac, (Nepritel) nalezenaPostava, svet).zahajitSouboj();;
@@ -50,7 +49,7 @@ public class Interakce implements Command {
         } else if (nalezenaPostava instanceof Obchodnik) {
             System.out.println(nalezenaPostava.getJmeno() + " je obchodnik.");
             System.out.println("Chces neco koupit? (ano/ne)");
-            String odpoved = scanner.nextLine().toLowerCase();
+            String odpoved = sc.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
                 return ((Obchodnik) nalezenaPostava).obchod(hrac, svet);

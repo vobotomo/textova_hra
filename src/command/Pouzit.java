@@ -16,10 +16,9 @@ public class Pouzit implements Command {
         this.svet = svet;
     }
 
-    Scanner sc = new Scanner(System.in);
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){
             return "Inventar je prazdny.";
         }

@@ -1,8 +1,10 @@
 package command;
 
+import java.util.Scanner;
+
 public interface Command {
 
-    String execute();
+    String execute(Scanner sc);
     boolean exit();
 
 }

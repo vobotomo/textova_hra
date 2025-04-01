@@ -20,7 +20,7 @@ public class Obchodnik extends Postava {
                 postava.getDialog();
             }
         }
-        for (Predmet predmet : svet.getPredmety()) {
+        for (Predmet predmet : svet.getPredmetyObchod()) {
             if (predmet.getMisto() == svet.getPoziceHrace()) {
                 System.out.println("- " + predmet.getJmeno() + " (" + predmet.getPopis() + ") za 5 vlcich kosti");
             }
@@ -33,7 +33,7 @@ public class Obchodnik extends Postava {
             return "Obchod ukoncen.";
         }
 
-        for (Predmet predmet : svet.getPredmety()) {
+        for (Predmet predmet : svet.getPredmetyObchod()) {
             if (predmet.getJmeno().equalsIgnoreCase(volba) && predmet.getMisto() == svet.getPoziceHrace()) {
                 int cena = 3;
 

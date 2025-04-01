@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Napoveda implements Command{
 
@@ -20,7 +21,7 @@ public class Napoveda implements Command{
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         try (BufferedReader br = new BufferedReader(new FileReader("src/napoveda.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {

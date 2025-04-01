@@ -4,6 +4,8 @@ import herni_svet.Svet;
 import postavy.Postava;
 import predmety.Predmet;
 
+import java.util.Scanner;
+
 public class Prozkoumej implements Command {
     private Svet svet;
 
@@ -13,7 +15,7 @@ public class Prozkoumej implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         StringBuilder a = new StringBuilder();
         int pocet = 0;
 

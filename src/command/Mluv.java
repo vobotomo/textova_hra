@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Mluv implements Command {
     private HashMap<Integer,String> vety;
@@ -17,7 +18,7 @@ public class Mluv implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         try (BufferedReader br = new BufferedReader(new FileReader("pribeh.txt"))) {
             String radek;
             while ((radek = br.readLine()) != null) {

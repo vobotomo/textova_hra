@@ -4,6 +4,8 @@ package command;
 import herni_svet.Svet;
 import postavy.Hrac;
 
+import java.util.Scanner;
+
 public class Vzit implements Command {
     private Hrac hrac;
     private Svet svet;
@@ -14,7 +16,7 @@ public class Vzit implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         for (int i = 0; i < svet.getPredmety().size(); i ++) {
             if (svet.getPoziceHrace() == svet.getPredmety().get(i).getMisto()) {
                 hrac.getInventar().pridaniPredmetu(svet.getPredmety().get(i));

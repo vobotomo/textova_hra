@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Zahod implements Command {
     private Hrac hrac;
     private Svet svet;
-    private Scanner sc = new Scanner(System.in);
 
     public Zahod(Hrac hrac, Svet svet) {
         this.hrac = hrac;
@@ -18,7 +17,7 @@ public class Zahod implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){
             return "Inventar je prazdny.";
         }

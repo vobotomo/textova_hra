@@ -2,6 +2,8 @@ package command;
 
 import postavy.Hrac;
 
+import java.util.Scanner;
+
 public class UkazInventar implements Command{
 
     private Hrac hrac;
@@ -11,7 +13,7 @@ public class UkazInventar implements Command{
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         String result = "";
 
         if (hrac.getInventar().getInventar().isEmpty()) {

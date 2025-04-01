@@ -24,6 +24,7 @@ public class Svet {
     public Svet() {
         nacteniMapy();
         nacteniPredmetu();
+        nacteniPredmetuObchod();
         nacteniPostav();
     }
 
@@ -178,15 +179,15 @@ public class Svet {
         return false;
     }
 
-    public void odemknoutTajemnyChram() {
+    public String odemknoutTajemnyChram() {
         Mistnost labyrint = svet.get(6);
         labyrint.pridatPropojeni(7);
-        System.out.println("Tajemny chram je nyni pristupny!");
+        return "Tajemny chram je nyni pristupny!";
     }
 
-    public void zamknoutTajemnyChram() {
+    public String zamknoutTajemnyChram() {
         svet.get(6).setPropojeneMistnosti(new int[]{2});
-        System.out.println("Tajemny chram je opet nepristupny.");
+        return "Tajemny chram je opet nepristupny.";
     }
 
     public HashMap<Integer, Mistnost> getSvet() {

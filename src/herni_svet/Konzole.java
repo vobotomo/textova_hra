@@ -36,7 +36,7 @@ public class Konzole {
         System.out.println(">");
         String prikaz = sc.next();
         if (prikazy.containsKey(prikaz)) {
-            System.out.println(prikazy.get(prikaz).execute());
+            System.out.println(prikazy.get(prikaz).execute(sc));
             exit = prikazy.get(prikaz).exit();
         } else {
             System.out.println("Neplatny prikaz!");

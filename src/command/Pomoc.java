@@ -3,6 +3,7 @@ package command;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Pomoc implements Command {
 
@@ -10,7 +11,7 @@ public class Pomoc implements Command {
 
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         prikazy = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("src/prikazy.txt"))) {
             String line = "";

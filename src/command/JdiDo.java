@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class JdiDo implements Command {
 
 
-    Scanner sc = new Scanner(System.in);
     private Svet svet;
     private Bludiste bludiste;
 
@@ -18,7 +17,7 @@ public class JdiDo implements Command {
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         System.out.println("Zadej index mistnosti." + "\n" + ">");
         int index = -1;
 

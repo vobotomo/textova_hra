@@ -7,14 +7,13 @@ import java.util.Scanner;
 
 public class Vyber implements Command {
     private Hrac hrac;
-    private Scanner sc = new Scanner(System.in);
 
     public Vyber(Hrac hrac) {
         this.hrac = hrac;
     }
 
     @Override
-    public String execute() {
+    public String execute(Scanner sc) {
         if(hrac.getInventar().getInventar().isEmpty()){
             return "Inventar je prazdny.";
         }
