@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="JavaDocs pro Predmety">
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Souboj uprava">
+      <change afterPath="$PROJECT_DIR$/src/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/InterakceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/InterakceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/JdiDoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/JdiDoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/PouzitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/PouzitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/SoubojTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/SoubojTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/SvetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/SvetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testy/ZahodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testy/ZahodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +17,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -41,6 +35,9 @@
     &quot;accountId&quot;: &quot;54fb3007-c243-4825-bc48-7aadbd3b49dd&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -52,137 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.InterakceTest.testInterakceSNepritelem.executor": "Run",
-    "JUnit.InterakceTest.testInterakceSObchodnikem.executor": "Run",
-    "JUnit.InterakceTest.testZadnaPostavaVMistnosti.executor": "Run",
-    "JUnit.JdiDoTest.executor": "Run",
-    "JUnit.JdiDoTest.testBludisteBezKlice.executor": "Run",
-    "JUnit.JdiDoTest.testNeplatnyPresun.executor": "Run",
-    "JUnit.JdiDoTest.testNeplatnyVstup.executor": "Run",
-    "JUnit.JdiDoTest.testPresunDoPlatneMistnosti.executor": "Run",
-    "JUnit.JdiDoTest.testSpusteniBludiste.executor": "Run",
-    "JUnit.PouzitTest.executor": "Run",
-    "JUnit.PouzitTest.testPouzitPrutVeSpravneMistnosti.executor": "Run",
-    "JUnit.SoubojTest.executor": "Run",
-    "JUnit.SoubojTest.testSoubojObrana.executor": "Run",
-    "JUnit.SoubojTest.testSoubojUtok.executor": "Run",
-    "JUnit.SvetTest.executor": "Run",
-    "JUnit.SvetTest.testPresunout.executor": "Run",
-    "JUnit.ZahodTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vobor/Downloads/untitled1/untitled1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/vobor/IdeaProjects/untitled2/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.updates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/voborny/Downloads/JakTestovat/JakTestovat/JakTestovat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/vobor/IdeaProjects/untitled2/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="testy" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.SvetTest">
-    <configuration name="PouzitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.PouzitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PouzitTest.testPouzitPrutVeSpravneMistnosti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.PouzitTest" />
-      <option name="METHOD_NAME" value="testPouzitPrutVeSpravneMistnosti" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoubojTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.SoubojTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SvetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.SvetTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SvetTest.testPresunout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testy" />
-      <option name="MAIN_CLASS_NAME" value="testy.SvetTest" />
-      <option name="METHOD_NAME" value="testPresunout" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="textova_hra" />
       <method v="2">
@@ -196,21 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.SvetTest" />
-        <item itemvalue="JUnit.SvetTest.testPresunout" />
-        <item itemvalue="JUnit.PouzitTest.testPouzitPrutVeSpravneMistnosti" />
-        <item itemvalue="JUnit.PouzitTest" />
-        <item itemvalue="JUnit.SoubojTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
       </set>
     </attachedChunks>
   </component>
@@ -236,9 +115,10 @@
       <workItem from="1742319520540" duration="8496000" />
       <workItem from="1742741343158" duration="8444000" />
       <workItem from="1742838219786" duration="4609000" />
-      <workItem from="1742922369937" duration="14110000" />
-      <workItem from="1743321463473" duration="4949000" />
-      <workItem from="1743523210583" duration="15295000" />
+      <workItem from="1742922369937" duration="13738000" />
+      <workItem from="1742981298164" duration="2073000" />
+      <workItem from="1743582782866" duration="88000" />
+      <workItem from="1743582872533" duration="4374000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -480,109 +360,28 @@
       <option name="project" value="LOCAL" />
       <updated>1742936930610</updated>
     </task>
-    <task id="LOCAL-00031" summary="chyby">
-      <option name="closed" value="true" />
-      <created>1742937822855</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1742937822855</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Nacitani predmetu pro obchodnika">
-      <option name="closed" value="true" />
-      <created>1743322323224</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1743322323224</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest">
-      <option name="closed" value="true" />
-      <created>1743524147240</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1743524147240</updated>
-    </task>
-    <task id="LOCAL-00034" summary="JdiDoTest">
-      <option name="closed" value="true" />
-      <created>1743525621496</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1743525621496</updated>
-    </task>
-    <task id="LOCAL-00035" summary="InterakceTest">
-      <option name="closed" value="true" />
-      <created>1743531606850</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1743531606850</updated>
-    </task>
-    <task id="LOCAL-00036" summary="SoubojTest">
-      <option name="closed" value="true" />
-      <created>1743532760930</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1743532760930</updated>
-    </task>
-    <task id="LOCAL-00037" summary="PouzitTest">
-      <option name="closed" value="true" />
-      <created>1743533590435</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1743533590435</updated>
-    </task>
-    <task id="LOCAL-00038" summary="SvetTest">
-      <option name="closed" value="true" />
-      <created>1743534191264</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1743534191264</updated>
-    </task>
-    <task id="LOCAL-00039" summary="JavaDocs pro vsechny commandy">
-      <option name="closed" value="true" />
-      <created>1743535691538</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1743535691538</updated>
-    </task>
-    <task id="LOCAL-00040" summary="JavaDocs pro herni_svet">
-      <option name="closed" value="true" />
-      <created>1743536877580</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1743536877580</updated>
-    </task>
-    <task id="LOCAL-00041" summary="JavaDocs pro Postavy">
-      <option name="closed" value="true" />
-      <created>1743537308159</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1743537308159</updated>
-    </task>
-    <task id="LOCAL-00042" summary="JavaDocs pro Predmety">
-      <option name="closed" value="true" />
-      <created>1743537614480</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1743537614480</updated>
-    </task>
-    <option name="localTasksCounter" value="43" />
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -594,6 +393,18 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Trida Pomoc: vypis prikazu" />
+    <MESSAGE value="Trida Predmety + predmety.txt" />
+    <MESSAGE value="Trida Zbran, Ryby - settery" />
+    <MESSAGE value="Trida Postavy - nacteniPostav" />
+    <MESSAGE value="Trida JdiDo" />
+    <MESSAGE value="Presunuti nacitani postav a predmetu do tridy Svet" />
+    <MESSAGE value="Trida Prozkoumej" />
+    <MESSAGE value="Trida Napoveda" />
+    <MESSAGE value="Trida Vzit" />
+    <MESSAGE value="Trida Zahod" />
+    <MESSAGE value="Trida Vyber" />
+    <MESSAGE value="Trida Mistnost: metoda pridatPropojeni" />
     <MESSAGE value="Trida Svet: metoda odemknoutTajemnyChram" />
     <MESSAGE value="Trida Zahod upravena pro klic" />
     <MESSAGE value="Trida Vzit upravena pro klic" />
@@ -607,19 +418,7 @@
     <MESSAGE value="Trida Mluv" />
     <MESSAGE value="oprava chyb" />
     <MESSAGE value="Souboj uprava" />
-    <MESSAGE value="chyby" />
-    <MESSAGE value="Nacitani predmetu pro obchodnika" />
-    <MESSAGE value="Pridani Scanneru jako parametr do vsech Commandu&#10;ZahodTest" />
-    <MESSAGE value="JdiDoTest" />
-    <MESSAGE value="InterakceTest" />
-    <MESSAGE value="SoubojTest" />
-    <MESSAGE value="PouzitTest" />
-    <MESSAGE value="SvetTest" />
-    <MESSAGE value="JavaDocs pro vsechny commandy" />
-    <MESSAGE value="JavaDocs pro herni_svet" />
-    <MESSAGE value="JavaDocs pro Postavy" />
-    <MESSAGE value="JavaDocs pro Predmety" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaDocs pro Predmety" />
+    <option name="LAST_COMMIT_MESSAGE" value="Souboj uprava" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
