@@ -216,6 +216,20 @@ public class Svet {
         return false;
     }
 
+    public String nacteniPribehu() {
+        StringBuilder pribeh = new StringBuilder();
+
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/pribeh.txt"))) {
+            String radek;
+            while ((radek = br.readLine()) != null) {
+                pribeh.append(radek).append("\n");
+            }
+            return pribeh.toString();
+        } catch (IOException e) {
+            return "Nekde nastala chyba";
+        }
+    }
+
     /**
      * Odemkne Tajemny chram pridanim propojeni do mistnosti s ID 7.
      *

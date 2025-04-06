@@ -1,0 +1,8 @@
+0,Hrac: Tento les se mi nejak nezda. , Les: Moc ticho, co? Ale neboj, temnota tu nikdy nespí.
+1,Hrac: Co se to tu deje? Proc se citim tak divne? , Les: To je jen les, co hleda sve obyvatele. A ty jsi jednim z nich.
+2,Hrac: Nemohu najit cestu ven. , Les: Cesta ven je jen iluze. Les se nikdy nezda stejny.
+3,Hrac: Prosim, ukaz mi cestu. , Les: Cesta? Les ukaze cestu, jen pokud jsi pripraven ji nasledovat.
+4,Hrac: Slysis to? Co je tam za zvuk? , Les: Zvuky? Les ma mnoho hlasu. Nenech se zmast.
+5,Hrac: Nevím, co mam delat. , Les: Pokud nevis, jdi zpatky. Ale pamatuj, i zpet je cesta dal.
+6,Hrac: Kde jsem? , Les: Jsi na miste, kde se hranice mezi svetem a temnotou stira. Jsi v lese.
+7,Hrac: Co se tu stalo? , Les: Stalo? Nic se nedeje. Les ma sve tajemstvi. A ty se stavas soucasti jeho.

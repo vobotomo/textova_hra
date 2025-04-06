@@ -1,10 +1,1 @@
-dodelat vsechny dialogy, popisy predmetu a postav, pribeh
-otestovat velikost inventare
-zkontrolovat scannery - chyba pri zadani jine odpovedi (sc.nextLine())
-cenu predmetu v obchode pridat jako atribut
 zkontrolovat jeste vice bludiste
-zkontrolovat returny u metod (aby nevracely ""), lze vyresit jak u interakce
-projit Command Zahod - ma pridavat predmet znova do sveta???
-pridat vsude equalsIgnoreCase
-metoda zahajitSouboj, pokud mozno zkratit a vyzkouset ji
-ujistit se u sveta, ze se vse nacita ze souboru spravne

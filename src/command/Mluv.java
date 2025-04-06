@@ -30,7 +30,7 @@ public class Mluv implements Command {
      */
     @Override
     public String execute(Scanner sc) {
-        try (BufferedReader br = new BufferedReader(new FileReader("res/pribeh.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/mluv.txt"))) {
             String radek;
             while ((radek = br.readLine()) != null) {
                 String[] casti = radek.split(",", 2);

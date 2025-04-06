@@ -62,6 +62,8 @@ public class Konzole {
     public void start() {
         Svet svet = new Svet();
         inicializace(svet);
+        System.out.println(svet.nacteniPribehu());
+
         do{
             provedPrikaz();
         }while(exit != true);
