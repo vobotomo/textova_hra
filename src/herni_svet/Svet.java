@@ -71,7 +71,7 @@ public class Svet {
      */
     public boolean nacteniPredmetu() {
         predmety = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("ssrc/res/predmety.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/predmety.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(";");
@@ -216,6 +216,12 @@ public class Svet {
         return false;
     }
 
+    /**
+     * Nacte pribeh ze souboru a vrati ho jako retezec.
+     *
+     * @return Pribeh jako retezec obsahujici vsechny radky ze souboru, nebo
+     *         zpravu o chybe v pripade, ze dojde k IOException.
+     */
     public String nacteniPribehu() {
         StringBuilder pribeh = new StringBuilder();
 
