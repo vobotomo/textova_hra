@@ -1,0 +1,6 @@
+postava;1;Mudrc;Pokud chces osvobodit temny les, musis projit zkouskami lesa. Naslouchej prirode a hledej stopy minulosti. Zacni prozkoumanim tehle mistnosti.;0
+nepritel;2;Obr;Rrrrr! Nikdo neprojde moji jeskyni! Priprav se na boj, smrtelniku!;1;10;20
+obchodnik;3;Vila;Mas vlci kosti? Za ne ti mohu nabidnout vzacne predmety. Vyber si moudre.;4
+nepritel;4;Vlk;Zahrci a vyrazi proti tobe. Jeho oci zari zlobou a hladovym pohledem.;2;5;10
+nepritel;5;Mrtvy rytir;Jsem strazcem minulych hrdinu... Pokud chces muj mec, musis me porazit!;3;15;30
+nepritel;6;Veleslav;Hlupaku! Myslis, ze me muzes porazit? Temnota lesa je ma sila!;7;25;50

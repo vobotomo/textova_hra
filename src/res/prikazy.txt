@@ -1,0 +1,12 @@
+1. jdiDo - Pohyb mezi lokacemi.
+2. exit - Ukoncene hry.
+3. pomoc - Zobrazene seznamu prikazu.
+4. napoveda - Dodatecna rada pro aktualni situaci.
+5. vyber - Slouzi pro vyber zbrane.
+6. vzit - Sebrat predmet.
+7. pouzit - Pouzit predmet.
+8. zahod - Hrac odstrane predmet z jeho inventare.
+9. mluv - Komunikovat s postavami.
+10. prozkoumej – Detailnejsi popis.
+11. interakce - Interaguj s postavou.
+12. inventar - Ukaze ti tvuj inventar.
