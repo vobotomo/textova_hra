@@ -24,7 +24,7 @@ public class Pomoc implements Command {
     @Override
     public String execute(Scanner sc) {
         prikazy = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("src/prikazy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/prikazy.txt"))) {
             String line = "";
             while ((line = br.readLine()) != null) {
                 prikazy.add(line);

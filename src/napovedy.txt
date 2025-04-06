@@ -1,8 +1,0 @@
-Mytina: Hrac je napaden vlkem. Doporucuji pouzit nuz.
-Dum na strome: Zde zije vila, ktera ti muze prodat predmety.
-Opustena chalupa: Mudrc ti da prvni napovedu k artefaktu.
-Jeskyně obru: Je potreba se pripravit na boj s obrem.
-Hrbitov: Tady se setkas s mrtvym rytirem.
-Rybnik: Muzes ulovit ryby pro zvyseni zivotu.
-Zeleny labyrint: Najdi klic pro pokracovani dal.
-Tajemny chram: Tady je Veleslav. Pouzij lektvar odvahy.

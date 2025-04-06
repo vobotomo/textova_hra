@@ -1,3 +1,0 @@
-1;Klic;Lze koupit u vily. Je potrebny pro postup dale.;4
-2;Prut;Prodava ho vila. Pouzitelny pouze jednou.;4
-3;Lektvar odvahy;Umoznuje hraci postavit se Veleslavovi;4

@@ -43,7 +43,7 @@ public class Svet {
      * @return True pokud je mapa nactena uspesne, jinak false.
      */
     public boolean nacteniMapy() {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/mapa.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/mapa.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] lines = line.split(",");
@@ -71,7 +71,7 @@ public class Svet {
      */
     public boolean nacteniPredmetu() {
         predmety = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("src/predmety.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("ssrc/res/predmety.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(";");
@@ -133,7 +133,7 @@ public class Svet {
      */
     public boolean nacteniPredmetuObchod() {
         predmetyObchod = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("src/predmetyObchod.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/predmetyObchod.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(";");
@@ -169,7 +169,7 @@ public class Svet {
      */
     public boolean nacteniPostav() {
         postavy = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("src/postavy.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/postavy.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(";");

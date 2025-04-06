@@ -38,7 +38,7 @@ public class Bludiste {
      * @return true pokud bylo bludiste uspesne nacteno, jinak false
      */
     public boolean nacteniBludiste(){
-            try (BufferedReader br = new BufferedReader(new FileReader("src/bludiste.txt"))) {
+            try (BufferedReader br = new BufferedReader(new FileReader("src/res/bludiste.txt"))) {
                 String radek;
                 while ((radek = br.readLine()) != null) {
                     String[] casti = radek.split(" ");

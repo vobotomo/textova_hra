@@ -33,7 +33,7 @@ public class Napoveda implements Command{
      */
     @Override
     public String execute(Scanner sc) {
-        try (BufferedReader br = new BufferedReader(new FileReader("src/napoveda.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/napovedy.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 napovedy.add(line);
