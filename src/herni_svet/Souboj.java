@@ -71,7 +71,7 @@
                     nepritel.setZivoty(nepritel.getZivoty() - hracUtok);
                     System.out.println("Zautocil jsi a zpusobil " + hracUtok + " poskozeni.");
                 } else if (volba == 2) {
-                    System.out.println("Pripravil jsi se na obranu! Poškození nepritele se sníží.");
+                    System.out.println("Pripravil jsi se na obranu! Poskozeni nepritele se snizi.");
                 }
 
 
@@ -101,19 +101,19 @@
                 }
 
                 if (nepritel.getZivoty() <= 0) {
-                    if (!(nepritel.getJmeno().equals("Vlk"))) {
-                        svet.getPostavy().remove(nepritel);
-                        break;
-                    }
-                    if (nepritel.getJmeno().equals("Vlk")) {
-                        nepritel.setZivoty(10);
-                        hrac.setVlciKosti(hrac.getVlciKosti()+2);
-                        break;
-                    }
-                    if (nepritel.getJmeno().equalsIgnoreCase("Veleslav")) {
-                        System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
-                        System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
-                        System.exit(0);
+                    switch (nepritel.getJmeno()) {
+                        case "Vlk":
+                            nepritel.setZivoty(10);
+                            hrac.setVlciKosti(hrac.getVlciKosti()+2);
+                            break;
+                        case "Veleslav" :
+                            System.out.println("Porazil jsi Veleslava a osvobodil jsi Temny les!");
+                            System.out.println("HRA SKONCILA. Gratulujeme k vitezstvi!");
+                            System.exit(0);
+                            break;
+                        default:
+                            svet.getPostavy().remove(nepritel);
+                            return "Vitezstvi! Porazil jsi " + nepritel.getJmeno();
                     }
                 }
             }

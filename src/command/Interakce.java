@@ -50,21 +50,25 @@ public class Interakce implements Command {
             vysledek = "V mistnosti neni zadna postava, se kterou bys mohl interagovat.";
         }
 
-        System.out.println("Narazil jsi na: " + nalezenaPostava.getJmeno());
+        if (nalezenaPostava != null) {
+            System.out.println("Narazil jsi na: " + nalezenaPostava.getJmeno());
+        }
 
         if (nalezenaPostava instanceof Nepritel) {
             System.out.println(nalezenaPostava.getJmeno() + " se chysta zautocit!");
             System.out.println("Chces bojovat? (ano/ne)");
+            sc.nextLine();
             String odpoved = sc.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
-                new Souboj(hrac, (Nepritel) nalezenaPostava, svet).zahajitSouboj(sc);;
+                System.out.println(new Souboj(hrac, (Nepritel) nalezenaPostava, svet).zahajitSouboj(sc));
             } else {
                 vysledek = "Rozhodl ses neutocit a ustoupit.";
             }
         } else if (nalezenaPostava instanceof Obchodnik) {
             System.out.println(nalezenaPostava.getJmeno() + " je obchodnik.");
             System.out.println("Chces neco koupit? (ano/ne)");
+            sc.nextLine();
             String odpoved = sc.nextLine().toLowerCase();
 
             if (odpoved.equals("ano")) {
@@ -73,7 +77,9 @@ public class Interakce implements Command {
                 vysledek = "Rozhodl sis nic nekoupit.";
             }
         } else {
-            vysledek = nalezenaPostava.getDialog();
+            if (nalezenaPostava != null) {
+                vysledek = nalezenaPostava.getDialog();
+            }
         }
         return vysledek;
     }

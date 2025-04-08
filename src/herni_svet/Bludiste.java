@@ -37,21 +37,21 @@ public class Bludiste {
      *
      * @return true pokud bylo bludiste uspesne nacteno, jinak false
      */
-    public boolean nacteniBludiste(){
-            try (BufferedReader br = new BufferedReader(new FileReader("src/res/bludiste.txt"))) {
-                String radek;
-                while ((radek = br.readLine()) != null) {
-                    String[] casti = radek.split(" ");
-                    int klic = Integer.parseInt(casti[0]);
-                    int leva = Integer.parseInt(casti[1]);
-                    int prava = Integer.parseInt(casti[2]);
-                    mapa.put(klic, new int[]{leva, prava});
-                }
-            } catch (IOException e) {
-                return false;
+    public boolean nacteniBludiste() {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/res/bludiste.txt"))) {
+            String radek;
+            while ((radek = br.readLine()) != null) {
+                String[] casti = radek.split(" ");
+                int klic = Integer.parseInt(casti[0]);
+                int leva = Integer.parseInt(casti[1]);
+                int prava = Integer.parseInt(casti[2]);
+                mapa.put(klic, new int[]{leva, prava});
             }
+        } catch (IOException e) {
+            return false;
+        }
 
-            return true;
+        return true;
 
     }
 
@@ -86,10 +86,9 @@ public class Bludiste {
             }
 
 
-            hrac.setZivoty(hrac.getZivoty()-5);
+            hrac.setZivoty(hrac.getZivoty() - 5);
             if (hrac.getZivoty() <= 0) {
                 return "Ztratil jsi veskerou energii a bloudis naveky...";
-
             }
 
 
@@ -100,14 +99,10 @@ public class Bludiste {
                         return "Odemkl jsi dvere a uspesne prosel bludistem!";
                     }
                 }
-            } else {
                 svet.presunout(2);
                 return "Dvere jsou zamcene! Potrebujes klic.";
-
             }
         }
-        sc.close();
         return "";
     }
-
 }

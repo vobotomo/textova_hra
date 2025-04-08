@@ -32,7 +32,8 @@ public class Vyber implements Command {
 
 
         System.out.println("Jakou zbran chces vybrat?" + "\n" + ">");
-        String odpoved = sc.next();
+        sc.nextLine();
+        String odpoved = sc.nextLine();
 
         for (int i = 0; i < hrac.getInventar().getInventar().size(); i++) {
             if (odpoved.equalsIgnoreCase(hrac.getInventar().getInventar().get(i).getJmeno())) {

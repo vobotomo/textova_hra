@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="Udelani metodu pro nacteniPribehu + dodelany soubor pro Mluv">
-      <change beforePath="$PROJECT_DIR$/src/herni_svet/Svet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Svet.java" afterDir="false" />
+    <list default="true" id="1c00c086-11ff-416a-946e-05e337339455" name="Changes" comment="mensi upravy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Interakce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Interakce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/JdiDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/JdiDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/Vyber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/Vyber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Bludiste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/herni_svet/Souboj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/herni_svet/Souboj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +129,8 @@
       <workItem from="1743582782866" duration="88000" />
       <workItem from="1743582872533" duration="4374000" />
       <workItem from="1743932810502" duration="779000" />
-      <workItem from="1743933621243" duration="3256000" />
+      <workItem from="1743933621243" duration="3516000" />
+      <workItem from="1744128238666" duration="4094000" />
     </task>
     <task id="LOCAL-00001" summary="vytvoreni trid mistnost, svet a textoveho souboru mapa.txt">
       <option name="closed" value="true" />
@@ -390,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743937106321</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="mensi upravy">
+      <option name="closed" value="true" />
+      <created>1743937973042</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1743937973042</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Trida Zbran, Ryby - settery" />
     <MESSAGE value="Trida Postavy - nacteniPostav" />
     <MESSAGE value="Trida JdiDo" />
     <MESSAGE value="Presunuti nacitani postav a predmetu do tridy Svet" />
@@ -448,7 +461,8 @@
     <MESSAGE value="Souboj uprava" />
     <MESSAGE value="Presun souboru do package res a pridani dialogu postav" />
     <MESSAGE value="Udelani metodu pro nacteniPribehu + dodelany soubor pro Mluv" />
-    <option name="LAST_COMMIT_MESSAGE" value="Udelani metodu pro nacteniPribehu + dodelany soubor pro Mluv" />
+    <MESSAGE value="mensi upravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="mensi upravy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -45,7 +45,7 @@ public class JdiDo implements Command {
 
         String jmenoMistnosti = "";
         if(index == 6){
-            bludiste.spustit();
+            return bludiste.spustit();
         }
         if (svet.presunout(index)) {
             jmenoMistnosti += svet.getSvet().get(index).getJmeno();
